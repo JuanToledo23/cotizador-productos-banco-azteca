@@ -1,0 +1,90 @@
+.contCotizador {
+    width: 90%;
+    margin: 0 auto;
+}
+.cotizador {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.cotizador .blanco { padding: 25px; }
+.cotizador .cardUsuario { width: 40%; }
+.cotizador .contBusquedaFiltro { width: 59%; }
+.nombreUsuario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nombreUsuario .userPic {
+    margin-left: 0px;
+}
+.nombreUsuario >  div:nth-child(2) {
+    margin-left: 15px;
+}
+.nombreUsuario h2 {
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'AvenirNextLTPro-Medium';
+}
+.nombreUsuario h3 {
+    margin: 0px;
+    font-size: 16px;
+    color: #a2a2a2;
+    font-family: 'Avenir_Light';
+}
+.demiBold {font-family: 'Avenir_Next_Demi_Bold';}
+.datosCliente { margin-top: 15px;}
+.tablaDatosCliente tr td:nth-child(1) { text-align: left;}
+.tablaDatosCliente tr td:nth-child(2) { text-align: right;}
+.txtColorGris { color: #777777; }
+.direccionCliente {
+    margin: 15px 0px 5px 0px;
+    padding-left: 10px;
+}
+.direccionInfo {
+    margin: 0px 0px 5px 0px;
+    padding-left: 10px
+}
+.cotizador .linkVerde {
+    margin-bottom: 0px;
+}
+.contProductos {
+    margin-top: 30px;
+}
+.contProductos div {
+    margin-bottom: 30px;
+}
+
+// Estilos generales
+.blanco{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    border: 1px solid #f9f9f9;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+.userPic {
+    background-image: url(/assets/img/user.jpg);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    border: solid 1px grey;
+    min-width: 50px;
+    min-height: 50px;
+    margin-left: 15px;
+  }
+  .linkVerde {
+    text-align: center;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 11px;
+    margin: 20px 0;
+}
+.linkVerde a{
+    text-decoration: none;
+}
+.textoVerde {color: #40af29 !important;}

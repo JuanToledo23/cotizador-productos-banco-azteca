@@ -4,6 +4,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 
 @NgModule({
@@ -12,7 +15,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatTabsModule,
     MatDividerModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

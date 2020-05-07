@@ -12,4 +12,9 @@ export class EtiquetadoComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterViewInit(): void {
+    document.getElementsByClassName('mat-tab-header-pagination-before')[0].remove();
+    document.getElementsByClassName('mat-tab-header-pagination-after')[0].remove();
+  }
+
 }

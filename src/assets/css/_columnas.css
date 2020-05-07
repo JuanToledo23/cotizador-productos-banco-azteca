@@ -1,0 +1,95 @@
+.contSecc {
+  width: 100%;
+    margin: 0 auto;
+}
+.divCol {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 20px;
+    align-items: stretch;
+}
+  
+  .col {
+    grid-column: auto / span 1;
+  }
+  .col2 {
+    grid-column: auto / span 2;
+  }
+  .col3 {
+    grid-column: auto / span 3;
+  }
+  .col4 {
+    grid-column: auto / span 4;
+  }
+  .col5 {
+    grid-column: auto / span 5;
+  }
+  .col6 {
+    grid-column: auto / span 6;
+  }
+  .col7 {
+    grid-column: auto / span 7;
+  }
+  .col8 {
+    grid-column: auto / span 8;
+  }
+  .col9 {
+    grid-column: auto / span 9;
+  }
+  .col10 {
+    grid-column: auto / span 10;
+  }
+  .col11 {
+    grid-column: auto / span 11;
+  }
+  .col12 {
+    grid-column: auto / span 12;
+  }
+  
+  @media screen and (max-width: 1000px){
+    .contGustos .col3{
+  
+      grid-column: auto / span 6;
+      
+    }
+    .contGustos .col4{
+  
+      grid-column: auto / span 6;
+      
+    }
+  
+    .contHobbies .col4{
+  
+      grid-column: auto / span 4;
+      
+    }
+  
+    .contUbicacion .col7, .contUbicacion .col4{
+      grid-column: auto / span 6;
+    }
+  }
+          
+  @media screen and (max-width: 800px) { 
+    /*.col4 {
+      grid-column: auto / span 6;
+    }
+  
+    .col3 {
+      grid-column: auto / span 4;
+    }*/
+  }
+  
+  @media screen and (max-width: 768px) { 
+    .contRancho .col5, .contRancho .col7 {
+      grid-column: auto / span 12;
+    }
+  
+    .contSobreMi > .col8, .contSobreMi > .col4{
+      grid-column: auto / span 12;
+    }
+  
+  }
+  
+  

@@ -1,1 +1,110 @@
-<p>tickets-abarrotes works!</p>
+<div class="contSecc">
+    <div class="">
+        <div class="admnCont">
+            <div class="blanco divBuscador">
+                <div class="divBloque1">
+                    <h1>Ticket de <span class="bold">abarrotes</span></h1>
+                    <div class="copy">Busca a tu cliente por nombre, RFC o cliente único</div>
+                    <mat-tab-group (selectedTabChange)="tabChanged($event)">
+                        <mat-tab label="Nombre">
+                            <div class="divCol">
+                                <div class="col12">
+                                    <div class="inputLabel  labelNombre">Nombre(s):</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col6">
+                                    <div class="inputLabel  labelNombre">Apellido paterno:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col6">
+                                    <div class="inputLabel  labelNombre">Apellido materno:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col12">
+                                    <div class="inputLabel labelNombre">Fecha de nacimiento:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="RFC">
+                            <div class="inputBuscador">
+                                <div class="inputLabel labelNombre">RFC:</div>
+                                <div class="autocomplete ui-widget" style="width: 100%;">
+                                    <input type="text"  class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="Cliente único">
+                            <div class="inputBuscador">
+                                <div class="inputLabel labelNombre">Número de Cliente único:</div>
+                                <div class="autocomplete ui-widget" style="width: 100%;">
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                    </mat-tab-group>
+                    <div class="btnVerde">
+                        <button mat-button class="btnPrimario btnBuscarCliente" (click)= showResultados()>Buscar cliente</button>
+                    </div>
+                </div>
+            </div>
+            <div class="divBloque2">
+                <h1>¿Cuál de ellos es tu cliente?</h1>
+                <a href="#" class="divClientes">
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Juan Alberto Venegas López</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$385</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="divClientes">
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Aldo Ramiro Cruz Manzanares Lara</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$385</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="divClientes">
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Alberto Gamboa Ruíz</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$385</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="linkVerde">
+                    <a href="#" class="textoVerde btnNuevaBusqueda">Volver a buscar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

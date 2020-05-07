@@ -15,12 +15,13 @@
 .mat-tab-label-active {
     background-color: #40af29;
 }
-.mat-tab-group.mat-primary .mat-ink-bar {
+.mat-tab-group.mat-primary .mat-tab-label-active .mat-ink-bar {
     left: 0 !important;
     width: 33.33% !important;
     background-color: #85db60 !important;
     height: 3px !important;
 }
+.mat-tab-group.mat-primary .mat-ink-bar {background-color: #85db60 !important;}
 .mat-tab-label .mat-tab-label-content {
     color: #ffffff;
 }

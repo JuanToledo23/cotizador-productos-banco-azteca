@@ -1,13 +1,13 @@
 <div class="contSecc">
     <div class="">
         <div class="admnCont">
-            <div class="blanco divBuscador">
+            <div class="blanco divBuscador" *ngIf="busquedaAbarrotes">
                 <div class="divBloque1">
                     <h1>Ticket de <span class="bold">abarrotes</span></h1>
                     <div class="copy">Busca a tu cliente por nombre, RFC o cliente único</div>
-                    <mat-tab-group (selectedTabChange)="tabChanged($event)">
+                    <mat-tab-group >
                         <mat-tab label="Nombre">
-                            <div class="divCol">
+                            <div class="divCol divFormularioTicket">
                                 <div class="col12">
                                     <div class="inputLabel  labelNombre">Nombre(s):</div>
                                     <input type="text" id="tags" class="inputBuscar">
@@ -38,7 +38,7 @@
                             <div class="inputBuscador">
                                 <div class="inputLabel labelNombre">Número de Cliente único:</div>
                                 <div class="autocomplete ui-widget" style="width: 100%;">
-                                    <input type="text" id="tags" class="inputBuscar">
+                                    <input type="number" id="tags" class="inputBuscar">
                                 </div>
                             </div>
                         </mat-tab>
@@ -48,9 +48,9 @@
                     </div>
                 </div>
             </div>
-            <div class="divBloque2">
+            <div class="divBloque2" *ngIf="resultadosCliente">
                 <h1>¿Cuál de ellos es tu cliente?</h1>
-                <a href="#" class="divClientes">
+                <a class="divClientes" (click)=showDetallesCliente()>
                     <div class="divCliente">
                         <div class="fotoCliente">
                             <img src="assets/img/userCliente.svg" alt="imgcliente">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="divClientes">
+                <a class="divClientes">
                     <div class="divCliente">
                         <div class="fotoCliente">
                             <img src="assets/img/userCliente.svg" alt="imgcliente">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="divClientes">
+                <a class="divClientes">
                     <div class="divCliente">
                         <div class="fotoCliente">
                             <img src="assets/img/userCliente.svg" alt="imgcliente">
@@ -102,7 +102,63 @@
                     </div>
                 </a>
                 <div class="linkVerde">
-                    <a href="#" class="textoVerde btnNuevaBusqueda">Volver a buscar</a>
+                    <a class="textoVerde btnNuevaBusqueda" (click)=volverBuscar()>Volver a buscar</a>
+                </div>
+            </div>
+        </div>
+        <div class="informacionCliente" *ngIf="detallesClienteUnico">
+            <div class="col12">
+                <div class="divCol detalleUsuario">
+                    <div class="col5">
+                        <div class="flex">
+                            <div class="fotoCliente">
+                                <img src="assets/img/userCliente.svg" alt="imgcliente">
+                            </div>
+                            <div class="nombre"><span class="bold" style="color: #363636;font-size: 21px;">Aldo Ramiro</span> <br> Cruz Manzanares Lara</div>
+                        </div>
+                        <br>
+                        <div class="col12">
+                            <table class="tblCliente">
+                                <tbody>
+                                    <tr>
+                                        <td>Cliente único</td>
+                                        <td class="bold textoGris">1001-1322-0012</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capacidad de pago</td>
+                                        <td class="bold textoGris">$350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capacidad de pago disponible</td>
+                                        <td class="bold">$320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col12" style="padding: 5px 8px;box-sizing: border-box;margin-top: 5px;">
+                            <div style="color: #363636;font-family: 'Avenir_Next_Regular';margin-bottom: 10px;">Dirección</div>
+                            <div style="color: #363636;font-size: 14px;font-family: 'Avenir_Next_Demi_Bold';">
+                                Cuauhtémoc 10-3, Col. Barrio La Lonja. CP 14268
+                                Delegación Tlalpan, CDMX
+                            </div>
+                        </div>
+                        <div class="linkVerde">
+                            <a class="textoVerde btnNuevaBusqueda" (click)=buscarOtroCliente()>Busca otro cliente</a>
+                        </div>
+                    </div>
+                    <div class="col7">
+                        <h3>Selecciona el plazo al cual el cliente desea el crédito</h3>
+                        <div class="divSeleccionaPlazos">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1"><span class="bold">13 semanas</span> – Importe máximo de venta sin financiamiento: <span class="bold">$1,344</span></mat-radio-button>
+                                <mat-radio-button value="2"><span class="bold">26 semanas</span> – Importe máximo de venta sin financiamiento: <span class="bold">$2,462</span></mat-radio-button>
+                                <mat-radio-button value="3"><span class="bold">39 semanas</span> – Importe máximo de venta sin financiamiento: <span class="bold">$3,407</span></mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="btnVerde">
+                            <button mat-button class="btnPrimario btnContinuar">Continuar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

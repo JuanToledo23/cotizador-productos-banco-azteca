@@ -12,7 +12,8 @@
     font-weight: 100;
     border-bottom: 2px solid #43b02a;
     font-size: 12px;
-    font-family: 'AvenirNextLTPro-Medium';min-width: 87px;
+    font-family: 'AvenirNextLTPro-Medium';
+    /* min-width: 87px; */
 }
 .tblGeneral tr td {
     padding: 7px 10px 7px 10px;

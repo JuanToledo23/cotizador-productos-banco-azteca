@@ -186,3 +186,17 @@ input[type=text]:focus {border: 1px solid #40af29;}
     justify-content: space-between;
 }
 .contEnganche > div:nth-child(2) div { width: 45%; }
+.txtMin {
+    font-size: 10px;
+    color: #A9A9A2;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+.txtMax {
+    font-size: 10px;
+    color: #A9A9A2;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}

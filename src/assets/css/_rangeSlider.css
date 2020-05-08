@@ -9,6 +9,7 @@
     align-items: center !important;
     min-height: 48px !important;
     margin: 0px 0px 10px 0px !important;
+    position: relative;
   }
   
   .range .ng5-slider {
@@ -83,4 +84,6 @@
 
 .ng5-slider .ng5-slider-bubble {
     bottom: -29px !important;
+    font-size: 12px!important;
+    font-family: 'AvenirNextLTPro-Medium';
 }

@@ -6,6 +6,11 @@
 .justifyEnd {justify-content: flex-end;}
 .spaceBet {justify-content: space-between !important;}
 
+.selfEnd{align-self: flex-end;}
+.selfStart{align-self: flex-start;}
+
+.flexCenter {justify-content: center;align-items: center;}
+
 .h100 {height: 100% !important;}
 
 .w5{width: 5%; box-sizing: border-box;}
@@ -41,46 +46,44 @@
 .tLeft{text-align: left}
 .tRigh{text-align: right}
 
-.sepVer{border-left: 1px solid #555555;};
-.sepHor{border-top: 1px solid #555555;};
+.sepVer{border-left: 1px solid #b0b1ab;};
+.sepHor{border-top: 1px solid #b0b1ab;};
 
 .mCenter { margin: 0 auto;}
 
 //Estilos que deberian ser generales
-// TABS
-.tabsEtiquetas {
-  .mat-tab-group {
-    margin-top: 20px;
-  }
 
-  .mat-tab-header {
-    background-color: red !important;
+.tGris {
+  color: #b0b1ab;
+}
+.bold { font-family: "Avenir_Next_Bold", sans-serif;}
+.demiBold {font-family: 'Avenir_Next_Demi_Bold',sans-serif;}
+
+// BOTON PRIMARIO
+.btn {
+  display: block;
+  text-align: center;
+  background-color: #40af29;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Avenir_Next_Bold", sans-serif;
+  font-size: 11px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  // box-shadow: 0px 2px 4px 1px #bdbbbd;
+  position: relative;
+  margin: 0 auto;
+  min-width: 250px;
+  line-height: 12px;
+}
+.btnPrimario {
+    background-color: #40af29;
     color: #ffffff;
-  }
-
-  .mat-tab-body {
-    padding-top: 30px;
-  }
-
-  .mat-tab-label {
-    // width: 33.33%;
-    background-color: red;
-  }
-
-  .mat-tab-label-active {
-    background-color: red;
-  }
-
-  .mat-tab-group.mat-primary .mat-ink-bar {
-    left: 0 !important;
-    width: 33.33% !important;
-    background-color: #85db60 !important;
-    height: 3px !important;
-  }
-
-  .mat-tab-label .mat-tab-label-content {
+}
+.btnSecundario {
+    background-color: #b0b1ab;
     color: #ffffff;
-  }
 }
 
 .blanco {
@@ -91,3 +94,15 @@
 }
 
 //Etiquetado
+
+.tituloEtiquetas {
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+  font-family: "AvenirNextLTPro-Medium", sans-serif;
+}
+.tituloEtiquetas span {
+  font-family: "Avenir_Next_Bold", sans-serif;
+  font-size: 2.2em;
+  padding-right: 10px;
+}

@@ -6,6 +6,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -16,7 +18,10 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatDividerModule,
     MatSidenavModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSliderModule,
+    MatTableModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

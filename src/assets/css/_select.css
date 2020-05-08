@@ -1,0 +1,31 @@
+.labelSelect {
+    border-top: 0px!important;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.select {
+    border: 1px solid #A9A9A2;
+    padding: 9px 12px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 12px;
+    outline: none;
+    font-family: 'Avenir_Light';
+}
+
+.mat-select-panel .mat-option, .mat-select-value {
+    color: #333333!important;
+}
+.mat-select-arrow-wrapper {
+    background-image: url(../img/icons/select.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 14px;
+}
+.mat-select-arrow {
+    border: 0px!important;
+    width: 14px!important;
+    height: 14px!important;
+}

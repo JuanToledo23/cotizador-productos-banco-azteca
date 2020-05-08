@@ -1,8 +1,7 @@
 .tblGeneral {
     width: 100%;
-    padding: 10px 0%;
     margin: 0px auto;
-    border-collapse: collapse;
+    border-collapse: separate;
     border-spacing: 0px;
 }
 .tblGeneral tr th {
@@ -12,7 +11,8 @@
     font-weight: 100;
     border-bottom: 2px solid #43b02a;
     font-size: 12px;
-    font-family: 'AvenirNextLTPro-Medium';min-width: 87px;
+    font-family: 'AvenirNextLTPro-Medium';
+    /* min-width: 87px; */
 }
 .tblGeneral tr td {
     padding: 7px 10px 7px 10px;

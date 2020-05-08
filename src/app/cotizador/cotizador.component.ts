@@ -13,3 +13,16 @@ export class CotizadorComponent implements OnInit {
   }
 
 }
+
+interface Food {
+  value: string;
+  viewValue: string;
+}
+
+export class SelectOverviewExample {
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
+}

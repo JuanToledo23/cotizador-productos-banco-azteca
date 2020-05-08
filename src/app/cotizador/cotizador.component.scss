@@ -1,3 +1,69 @@
+// Estilos generales
+.blanco{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    border: 1px solid #f9f9f9;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+.userPic {
+    background-image: url(/assets/img/user.jpg);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    border: solid 1px grey;
+    min-width: 50px;
+    min-height: 50px;
+    margin-left: 15px;
+  }
+  .linkVerde {
+    text-align: center;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 11px;
+    margin: 20px 0;
+}
+.linkVerde a{
+    text-decoration: none;
+}
+.textoVerde {color: #40af29!important;}
+
+.inputBuscador {
+    margin: 35px 0;
+}
+input {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+#inputBuscador  input:focus {
+    -webkit-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
+    -moz-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
+    box-shadow: 0px 2px 2px -1px rgba(168,166,168,1);
+}
+.inputFecha input:focus {border: 1px solid #40af29;}
+.inputBuscar:focus {border: 1px solid #40af29;}
+
+.contSlider { padding-top: 5px; }
+.slider { width: 100%; }
+.labelSlider {
+    font-size: 12px;
+    color: #a9a9a9;
+}
+
+
+
+// --------------------------------_
 .contCotizador {
     width: 90%;
     margin: 0 auto;
@@ -6,10 +72,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: nowrap;
 }
 .cotizador .blanco { padding: 25px; }
 .cotizador .cardUsuario { width: 40%; }
-.cotizador .contBusquedaFiltro { width: 59%; }
+.cotizador .contBusquedaFiltro { width: 57%; }
 .nombreUsuario {
     display: flex;
     justify-content: flex-start;
@@ -55,36 +122,24 @@
     margin-bottom: 30px;
 }
 
-// Estilos generales
-.blanco{
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    border: 1px solid #f9f9f9;
-    padding: 35px 45px;
-    box-sizing: border-box;
+.tablaProductos tr th:nth-child(1),
+.tablaProductos tr td:nth-child(1) {
+ text-align: right;
 }
-.userPic {
-    background-image: url(/assets/img/user.jpg);
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
-    border: solid 1px grey;
-    min-width: 50px;
-    min-height: 50px;
-    margin-left: 15px;
-  }
-  .linkVerde {
-    text-align: center;
-    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
-    font-size: 11px;
-    margin: 20px 0;
+.tablaProductos tr th:nth-child(3),
+.tablaProductos tr td:nth-child(3) {
+ text-align: left;
 }
-.linkVerde a{
-    text-decoration: none;
+.tablaProductos tr td {
+    font-size: 10px;
+    font-family: 'AvenirNextLTPro-Medium';
 }
-.textoVerde {color: #40af29 !important;}
+.tblResultados{
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+.tblResultados span {
+    font-size: 10px;
+    color: #a9a9a9;
+}

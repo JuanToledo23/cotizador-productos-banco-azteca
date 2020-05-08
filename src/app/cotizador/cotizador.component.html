@@ -39,7 +39,58 @@
                 </div>
             </div>
             <div class="contBusquedaFiltro">
-                
+                <div>
+                    <div class="inputLabel">Ingresa una descripción o el SKU de un producto:</div>
+                    <input type="text" id="tags" class="inputBuscar">
+                </div>
+                <div class="contSlider">
+                    <div class="labelSlider">(Opcional) Rango de precio</div>
+                    <mat-slider class="slider"></mat-slider>
+                </div>
+                <div>
+                    <table class="tblGeneral tablaProductos">
+                        <thead> 
+                            <tr>
+                                <th>SKU</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr>
+                                <td>83990286</td>
+                                <td>MUEBLE QUALLY GRUPO "D"</td>
+                                <td>$9120</td>
+                            </tr>
+                            <tr>
+                                <td>98560934</td>
+                                <td>MUEBLE QUALLY GRUPO "LUNE"</td>
+                                <td>$3948</td>
+                            </tr>
+                            <tr>
+                                <td>83789326</td>
+                                <td>M00A3001 / MUEBLE QUALLY GRUPO</td>
+                                <td>$3509</td>
+                            </tr>
+                            <tr>
+                                <td>87634598</td>
+                                <td>MUEBLE QUALLY GRUPO "A"</td>
+                                <td>$9120</td>
+                            </tr>
+                            <tr>
+                                <td>34567888</td>
+                                <td>MUEBLE QUALLY GRUPO "enul"</td>
+                                <td>$9876</td>
+                            </tr>
+                            <tr>
+                                <td>83990286</td>
+                                <td>MUEBLE QUALLY GRUPO "D"</td>
+                                <td>$9120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tblResultados"><span>200 resultados</span></div>
+                </div>
             </div>
         </div>
         <div class="contProductos">
@@ -67,6 +118,39 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div class="divCol ">
+            <div class="col3">
+                <mat-form-field class="contSelector">
+                    <div class="labelSelect">¿A qué plazo?</div>
+                    <select class="select" matNativeControl required>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </mat-form-field>
+            </div>
+            <div class="col5">
+                <table class="tblGeneral">
+                    <thead> 
+                        <tr>
+                            <th>Abono puntual</th>
+                            <th>Abono semanal</th>
+                            <th>Ùltimo pago</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                            <td>$300</td>
+                            <td>$320</td>
+                            <td>$290</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col2" style="background-color: red;">  dd</div>
+            <div class="col2" style="background-color: red;">dd</div>
         </div>
     </div>
 </div>

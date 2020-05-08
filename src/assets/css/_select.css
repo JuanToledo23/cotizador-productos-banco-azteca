@@ -1,0 +1,7 @@
+.labelSelect {
+    border-top: 0px!important;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.contSelector { width: 100%!important;}
+.contSelector .mat-form-field-infix { border-top: 0px!important; }

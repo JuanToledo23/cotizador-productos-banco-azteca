@@ -8,7 +8,7 @@
     display: flex !important;
     align-items: center !important;
     min-height: 48px !important;
-    padding: 0 9px !important;
+    margin: 0px 0px 10px 0px !important;
   }
   
   .range .ng5-slider {
@@ -19,7 +19,7 @@
     width: 12px !important;
     height: 12px !important;
     top: -5px !important;
-    background-color: #ea3455 !important;
+    background-color: #40af29 !important;
     outline: none !important;
   }
   
@@ -38,7 +38,7 @@
   .range .ng5-slider-pointer.ng5-slider-active::after {
     transform: scale(0.7) !important;
     opacity: 1 !important;
-    background-color: #ea3455 !important;
+    background-color: #40af29 !important;
   }
   
   .range .ng5-slider-bar-wrapper {
@@ -48,7 +48,7 @@
   }
   
   .range .ng5-slider-selection {
-    background-color: #ea3455 !important;
+    background-color: #40af29 !important;
   }
   .range .ng5-slider-bar {
     height: 2px !important;
@@ -82,5 +82,5 @@
 }
 
 .ng5-slider .ng5-slider-bubble {
-    bottom: -33px !important;
+    bottom: -29px !important;
 }

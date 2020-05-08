@@ -46,7 +46,9 @@
                 <div *ngIf="ocultar">
                     <div  class="contSlider">
                         <div class="labelSlider">(Opcional) Rango de precio</div>
-                        <mat-slider class="slider"></mat-slider>
+                        <div class="range-control range">
+                            <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+                        </div>
                     </div>
                     <div class="scroll">
                         <table class="tblGeneral tablaProductos">
@@ -87,12 +89,6 @@
                         <td>{{producto.precio}}</td>
                         <td><img src="assets/img/icons/delete.svg" alt="Eliminar" (click)="eliminarFila(producto)"></td>
                     </tr>
-                    <!-- <tr>
-                        <td>705892</td>
-                        <td>Seguro Vidamax</td>
-                        <td>$800</td>
-                        <td><img src="assets/img/icons/delete.svg" alt="Eliminar"></td>
-                    </tr> -->
                 </tbody>
             </table>
         </div>

@@ -18,7 +18,8 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSidenavModule,
     MatMenuModule,
     MatSelectModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

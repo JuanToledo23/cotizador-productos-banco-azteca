@@ -20,7 +20,8 @@ import {MatTableModule} from '@angular/material/table';
     MatMenuModule,
     MatSelectModule,
     MatSliderModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

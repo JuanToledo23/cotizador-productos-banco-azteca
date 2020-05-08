@@ -1,0 +1,28 @@
+.sliderToggle .mat-slide-toggle-content {
+    font-size: 12px!important;
+    line-height: 16px;
+    font-family: 'Avenir_Light';
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #ffffff!important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: rgba(67, 176, 42)!important;
+}
+.mat-slide-toggle.mat-checked .mat-ripple-element {
+    background-color: #43b02a!important;
+}
+.mat-slide-toggle-bar {
+    height: 22px!important;
+    width: 38px!important;
+    border-radius: 12px!important;
+}
+.mat-slide-toggle-thumb-container {
+    top: 2px!important;
+    left: 2px!important;
+    right: 2px!important;
+}
+.mat-slide-toggle-thumb {
+    height: 18px!important;
+    width: 18px!important;
+}

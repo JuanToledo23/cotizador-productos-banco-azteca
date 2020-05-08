@@ -6,23 +6,50 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cotizador.component.scss']
 })
 export class CotizadorComponent implements OnInit {
+  selected = 'option1';
+  ocultar = false;
+  ocultar2 = false;
+  elementosAgregados = [];
+
+  productos = [
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 98560934, descripcion: "MUEBLE QUALLY GRUPO  \"LUNE\"", precio: "$3948"},
+    {sku: 83789326, descripcion: "M00A3001 / MUEBLE QUALLY GRUPO", precio: "$3509"},
+    {sku: 34567888, descripcion: "MUEBLE QUALLY GRUPO  \"A\"", precio: "$9876"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 98560934, descripcion: "MUEBLE QUALLY GRUPO  \"LUNE\"", precio: "$3948"},
+    {sku: 83789326, descripcion: "M00A3001 / MUEBLE QUALLY GRUPO", precio: "$3509"},
+    {sku: 34567888, descripcion: "MUEBLE QUALLY GRUPO  \"A\"", precio: "$9876"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 98560934, descripcion: "MUEBLE QUALLY GRUPO  \"LUNE\"", precio: "$3948"},
+    {sku: 83789326, descripcion: "M00A3001 / MUEBLE QUALLY GRUPO", precio: "$3509"},
+    {sku: 34567888, descripcion: "MUEBLE QUALLY GRUPO  \"A\"", precio: "$9876"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
+    {sku: 98560934, descripcion: "MUEBLE QUALLY GRUPO  \"LUNE\"", precio: "$3948"},
+    {sku: 83789326, descripcion: "M00A3001 / MUEBLE QUALLY GRUPO", precio: "$3509"},
+    {sku: 34567888, descripcion: "MUEBLE QUALLY GRUPO  \"A\"", precio: "$9876"},
+    {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"}
+  ]
 
   constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  agregarProducto(producto:any){
+    this.elementosAgregados.push(producto);
+    this.ocultar2 = true;
   }
 
-}
+  eliminarFila(e) {
+    this.elementosAgregados.splice(this.elementosAgregados.indexOf(e), 1);
+  }
 
-interface Food {
-  value: string;
-  viewValue: string;
-}
-
-export class SelectOverviewExample {
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  buscar(e){
+    if(e.charCode === 13)
+    {
+      this.ocultar = true;
+    }
+  }
 }

@@ -20,8 +20,8 @@
     min-width: 50px;
     min-height: 50px;
     margin-left: 15px;
-  }
-  .linkVerde {
+}
+.linkVerde {
     text-align: center;
     font-family: 'Avenir_Next_Demi_Bold', sans-serif;
     font-size: 11px;
@@ -42,17 +42,21 @@ input {
     box-sizing: border-box;
     border-radius: 3px;
     color: #333333;
+    font-size: 12px;
+    outline: none;
+}
+input .bucador {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
     font-family: 'Avenir_Next_Demi_Bold', sans-serif;
     font-size: 15px;
     outline: none;
 }
-#inputBuscador  input:focus {
-    -webkit-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
-    -moz-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
-    box-shadow: 0px 2px 2px -1px rgba(168,166,168,1);
-}
-.inputFecha input:focus {border: 1px solid #40af29;}
-.inputBuscar:focus {border: 1px solid #40af29;}
+input[type=text]:focus {border: 1px solid #40af29;}
 
 .contSlider { padding-top: 5px; }
 .slider { width: 100%; }
@@ -60,14 +64,18 @@ input {
     font-size: 12px;
     color: #a9a9a9;
 }
-
-
+.scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 390px;
+}
 
 // --------------------------------_
 .contCotizador {
     width: 90%;
     margin: 0 auto;
 }
+.contCotizador > div { margin-bottom: 30px; }
 .cotizador {
     display: flex;
     justify-content: space-between;
@@ -115,24 +123,28 @@ input {
 .cotizador .linkVerde {
     margin-bottom: 0px;
 }
-.contProductos {
-    margin-top: 30px;
+.contProductos { margin-top: 30px; }
+.contProductos div { margin-bottom: 30px; }
+.scroll{
+    max-height: 200px;
+    overflow: scroll;
+    position: relative;
 }
-.contProductos div {
-    margin-bottom: 30px;
+.tablaProductos thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-collapse: separate!important;
 }
-
-.tablaProductos tr th:nth-child(1),
-.tablaProductos tr td:nth-child(1) {
- text-align: right;
-}
-.tablaProductos tr th:nth-child(3),
-.tablaProductos tr td:nth-child(3) {
- text-align: left;
-}
+.tablaProductos tr th:nth-child(1), .tablaProductos tr td:nth-child(1) { text-align: right; }
+.tablaProductos tr th:nth-child(3), .tablaProductos tr td:nth-child(3) { text-align: left; }
 .tablaProductos tr td {
     font-size: 10px;
     font-family: 'AvenirNextLTPro-Medium';
+}
+.tablaAbonos tr th,
+.tablaAbonos tr td {
+    text-align: right;
 }
 .tblResultados{
     width: 100%;
@@ -143,3 +155,34 @@ input {
     font-size: 10px;
     color: #a9a9a9;
 }
+.contSliderToggle {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center
+}
+.contenedorServicios {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorServicios > div:nth-child(1){
+    width: 14%;
+}
+.contenedorServicios > div:nth-child(2){
+    width: 36%;
+}
+.contenedorServicios > div:nth-child(3){
+    width: 19%;
+}
+.contenedorServicios > div:nth-child(4){
+    width: 24%;
+}
+.contEnganche {
+    display: flex;
+    flex-direction: column;
+}
+.contEnganche > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.contEnganche > div:nth-child(2) div { width: 45%; }

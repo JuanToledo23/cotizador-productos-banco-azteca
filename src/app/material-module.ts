@@ -7,6 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -18,7 +19,9 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSidenavModule,
     MatMenuModule,
     MatSelectModule,
-    MatSliderModule
+    MatSliderModule,
+    MatTableModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

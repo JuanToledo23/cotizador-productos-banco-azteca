@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material-module';
+import { Ng5SliderModule } from 'ng5-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatRadioModule,
     MatDialogModule,
     MatCheckboxModule,
+    Ng5SliderModule
   ],
   exports: [
     MaterialModule

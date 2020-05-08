@@ -1,8 +1,7 @@
 .tblGeneral {
     width: 100%;
-    padding: 10px 0%;
     margin: 0px auto;
-    border-collapse: collapse;
+    border-collapse: separate;
     border-spacing: 0px;
 }
 .tblGeneral tr th {

@@ -16,6 +16,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDialogModule} from '@angular/material/dialog';
+import { DialogHuella } from './tickets-abarrotes/dialogs/dialogHuella';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     TicketsAbarrotesComponent,
     EtiquetadoComponent,
     CancelacionDespuesEntregaComponent,
-    SurtimientoComponent
+    SurtimientoComponent,
+    DialogHuella
   ],
   imports: [
     BrowserModule,
@@ -36,10 +38,13 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatDialogModule
+    MatDialogModule 
   ],
   exports: [
     MaterialModule
+  ],
+  entryComponents: [
+    DialogHuella
   ],
   providers: [],
   bootstrap: [AppComponent]

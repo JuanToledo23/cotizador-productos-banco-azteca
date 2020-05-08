@@ -1,0 +1,59 @@
+.mat-dialog-container {
+    padding: 0 !important;
+}
+.cuadroch {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.blanco2 {
+    background-color: #ffffff;
+    box-shadow: 1px 3px 4px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.btnCerrarModal {font-size: 1em;cursor: pointer;}
+.bgVerde {
+    background-color: #39b01d;
+}
+.bgRojo{
+    background-color: #e04c24;
+}
+.w50 {
+    width: 50%;
+}
+.flex {display: flex;}
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+.justifyC {
+    justify-content: center;
+}
+.p20 {
+    padding: 20px;
+    box-sizing: border-box !important;
+}
+.w100 {
+    width: 100%;
+}
+.textoBlanco {
+    color: #fff;
+}
+.tCenter {
+    text-align: center !important;
+}
+.p10 {
+    padding: 10px;
+    box-sizing: border-box !important;
+}
+.tVerde {
+    color: #40af2c;
+}
+.tRight {
+    text-align: right !important;
+}

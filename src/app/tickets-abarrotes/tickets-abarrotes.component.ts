@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogHuella } from './dialogs/dialogHuella';
 
 @Component({
   selector: 'app-tickets-abarrotes',
@@ -28,9 +30,24 @@ export class TicketsAbarrotesComponent implements OnInit {
     this.resultadosCliente=false;
     this.busquedaAbarrotes=true;
   }
-  constructor() { }
+
+  abrirModalHuella(){
+    const dialogRef = this.dialog.open(DialogHuella);
+
+    dialogRef.afterClosed().subscribe(() => {
+      
+    });
+  }
+   
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(): void {
+    document.getElementsByClassName('mat-tab-header-pagination-before')[0].remove();
+    document.getElementsByClassName('mat-tab-header-pagination-after')[0].remove();
   }
 
 }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material-module';
+import { Ng5SliderModule } from 'ng5-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatDialogModule
+    MatDialogModule,
+    Ng5SliderModule
   ],
   exports: [
     MaterialModule

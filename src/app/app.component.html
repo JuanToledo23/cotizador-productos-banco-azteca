@@ -22,20 +22,25 @@
     <div class="posicion">{{rutaPosicion}}</div>
   </div>
 </div>
-<mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+<mat-sidenav-container class="example-container" (backdropClick)="close()">
+  <mat-sidenav #sidenav mode="over" (keydown.escape)="close()">
     <div class="menuPrincipal">
-      <button mat-button class="menuOpcion" [routerLink]="['/']" (click)="validaRuta($event)">Presupuesto</button>
-      <button mat-button class="menuOpcion" [routerLink]="['/surtimiento']" (click)="validaRuta($event)">Surtimiento</button>
-      <button mat-button class="menuOpcion" [routerLink]="['/ticketsAbarrotes']" (click)="validaRuta($event)">Ticket de abarrotes</button>
-      <button mat-button class="menuOpcion" [routerLink]="['/cancelacionDespuesEntrega']" (click)="validaRuta($event)">Cancelación después de entrega</button>
+      <button mat-button (click)="close()" class="menuOpcion" [routerLink]="['/']" (click)="validaRuta($event)">Presupuesto</button>
+      <button mat-button (click)="close()" class="menuOpcion" [routerLink]="['/surtimiento']" (click)="validaRuta($event)">Surtimiento</button>
+      <button mat-button (click)="close()" class="menuOpcion" [routerLink]="['/ticketsAbarrotes']" (click)="validaRuta($event)">Ticket de abarrotes</button>
+      <button mat-button (click)="close()" class="menuOpcion" [routerLink]="['/cancelacionDespuesEntrega']" (click)="validaRuta($event)">Cancelación después de entrega</button>
       <mat-divider></mat-divider>
-      <button mat-button class="menuOpcion" [routerLink]="['/etiquetado']" (click)="validaRuta($event)">Etiquetado</button>
+      <button mat-button (click)="close()" class="menuOpcion" [routerLink]="['/etiquetado']" (click)="validaRuta($event)">Etiquetado</button>
       <mat-divider></mat-divider>
     </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
+    <br><br><br>
+    <div class="range-control range">
+      <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+    </div>
+    
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 .userPic {
-    background-image: url(/assets/img/user.jpg);
+    background-image: url(../../assets/img/user.jpg);
     height: 60px;
     width: 60px;
     background-size: cover;
@@ -126,7 +126,7 @@ input[type=text]:focus {border: 1px solid #40af29;}
 .contProductos { margin-top: 30px; }
 .contProductos div { margin-bottom: 30px; }
 .scroll{
-    max-height: 200px;
+    max-height: 175px;
     overflow: scroll;
     position: relative;
 }
@@ -199,4 +199,38 @@ input[type=text]:focus {border: 1px solid #40af29;}
     position: absolute;
     right: 0px;
     top: 3px;
+}
+.btnRight {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnRight .btn{ margin-right: 10px; }
+.btnRight .btn:last-of-type{ margin-right: 0px!important; } 
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Avenir_Next_Bold", sans-serif;
+    font-size: 11px;
+    padding: 11px 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 12px;
+}
+.btnPrimario {
+    background-color: #40af29;
+    color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 2px 4px 1px #bdbbbd;
+}
+.btnLink { color: #40af29 !important; }
+.btnIcono{
+    text-align: center;
+    padding: 0px!important;
+}
+.btnIcono img {
+    width: 25px;
+    padding-right: 10px;
+
 }

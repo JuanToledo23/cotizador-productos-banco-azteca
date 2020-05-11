@@ -29,3 +29,6 @@
     width: 14px!important;
     height: 14px!important;
 }
+.mat-option, .mat-select {
+    font-family: 'Avenir_Next_Regular'!important;
+}

@@ -17,6 +17,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDialogModule} from '@angular/material/dialog';
+import { DialogHuella } from './tickets-abarrotes/dialogs/dialogHuella';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     TicketsAbarrotesComponent,
     EtiquetadoComponent,
     CancelacionDespuesEntregaComponent,
-    SurtimientoComponent
+    SurtimientoComponent,
+    DialogHuella
   ],
   imports: [
     BrowserModule,
@@ -38,12 +40,15 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatDialogModule,
+    MatDialogModule, 
     MatCheckboxModule,
     Ng5SliderModule
   ],
   exports: [
     MaterialModule
+  ],
+  entryComponents: [
+    DialogHuella
   ],
   providers: [],
   bootstrap: [AppComponent]

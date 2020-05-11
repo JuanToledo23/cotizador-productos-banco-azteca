@@ -1,0 +1,144 @@
+.flex{ display: flex;}
+.flexCol {display: flex; flex-direction: column;}
+.flexWrap{ display: flex; flex-wrap: wrap;}
+.alignC {align-items: center;}
+.justifyC {justify-content: center;}
+.justifyEnd {justify-content: flex-end;}
+.spaceBet {justify-content: space-between !important;}
+
+.selfEnd{align-self: flex-end;}
+.selfStart{align-self: flex-start;}
+
+.flexCenter {justify-content: center;align-items: center;}
+
+.h100 {height: 100% !important;}
+
+.w5{width: 5%; box-sizing: border-box;}
+.w10{width: 10%; box-sizing: border-box;}
+.w15{width: 15%; box-sizing: border-box;}
+.w20{width: 20%; box-sizing: border-box;}
+.w25{width: 25%; box-sizing: border-box;}
+.w30{width: 30%; box-sizing: border-box;}
+.w33{width: 33.33; box-sizing: border-box !important;}
+.w35{width: 35%; box-sizing: border-box;}
+.w40{width: 40%; box-sizing: border-box;}
+.w45{width: 45%; box-sizing: border-box;}
+.w50{width: 50%; box-sizing: border-box;}
+.w55{width: 55%; box-sizing: border-box;}
+.w60{width: 60%; box-sizing: border-box;}
+.w66{width: 66.66%; box-sizing: border-box;}
+.w65{width: 65%; box-sizing: border-box;}
+.w70{width: 70%; box-sizing: border-box;}
+.w75{width: 75%; box-sizing: border-box;}
+.w80{width: 80%; box-sizing: border-box;}
+.w85{width: 85%; box-sizing: border-box;}
+.w90{width: 90%; box-sizing: border-box;}
+.w95{width: 95%; box-sizing: border-box;}
+.w100{width: 100%; box-sizing: border-box;}
+
+.p5{padding:5px; box-sizing: border-box;}
+.p10{padding:10px; box-sizing: border-box;}
+.p15{padding:15px; box-sizing: border-box;}
+.p20{padding:20px; box-sizing: border-box;}
+.p25{padding:25px; box-sizing: border-box;}
+
+.tCenter{text-align: center}
+.tLeft{text-align: left}
+.tRigh{text-align: right}
+
+.sepVer{border-left: 1px solid #b0b1ab;};
+.sepHor{border-top: 1px solid #b0b1ab;};
+
+.mCenter { margin: 0 auto;}
+
+.pRelative {position: relative;}
+.pAbsolute {position: absolute;}
+//Estilos que deberian ser generales
+
+.tGris {
+  color: #b0b1ab;
+}
+.bold { font-family: "Avenir_Next_Bold", sans-serif;}
+.demiBold {font-family: 'Avenir_Next_Demi_Bold',sans-serif;}
+
+input {
+  border: 1px solid #A9A9A2;
+      width: 100%;
+      padding: 6px 12px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      color: #333333;
+      font-size: 12px;
+      outline: none;
+}
+
+
+// BOTON PRIMARIO
+.btn {
+  display: block;
+  text-align: center;
+  background-color: #40af29;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Avenir_Next_Bold", sans-serif;
+  font-size: 11px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  // box-shadow: 0px 2px 4px 1px #bdbbbd;
+  position: relative;
+  margin: 0 auto;
+  line-height: 12px;
+}
+.btnPrimario {
+    background-color: #40af29;
+    color: #ffffff;
+}
+.btnSecundario {
+    background-color: #b0b1ab;
+    color: #ffffff;
+}
+
+.blanco {
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px -1px #a8a6a8;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+}
+
+//Etiquetado
+
+.tituloEtiquetas {
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+  font-family: "AvenirNextLTPro-Medium", sans-serif;
+}
+.tituloEtiquetas span {
+  font-family: "Avenir_Next_Bold", sans-serif;
+  font-size: 2.2em;
+  padding-right: 10px;
+}
+.btnBottom {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.etiquetadoRow {
+  min-height: 330px;
+}
+
+.tblScrolV {
+  overflow-y: scroll;
+  max-height: 200px;
+  min-height: 30px;
+}
+.tblScrolV th{
+  position: sticky;
+  top:0;
+  background-color: #fff;
+  z-index: 1;
+}
+.tblScrollH{
+  overflow-x: scroll;
+}

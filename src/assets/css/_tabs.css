@@ -17,6 +17,9 @@
     /* min-width: 139px !important; */
     background-color: #40af29;
 }
+.mat-tab-label-content {
+    font-family: 'AvenirNextLTPro-Medium' !important;
+}
 .mat-tab-label-active {
     background-color: #40af29;
     font-family: 'Avenir_Next_Bold', sans-serif !important;

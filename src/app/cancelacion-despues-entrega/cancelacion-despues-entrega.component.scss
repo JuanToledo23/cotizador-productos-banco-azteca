@@ -1,0 +1,330 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.divSeleccionaPlazos .mat-radio-checked .mat-radio-inner-circle {border-color: #40af29 !important;}
+.divSeleccionaPlazos .mat-radio-button .mat-radio-inner-circle {
+    background-color: #40af29 !important;
+}
+
+.contSecc {
+    width: 94%;
+    margin: 0 auto;
+}
+.divFormularioTicket > div{
+    margin-bottom: 14px;
+}
+.divFormularioTicket > div:last-of-type{
+    margin-bottom: 0;
+}
+.admnCont { width: 60%; display: block;margin: 0 auto 11px auto; }
+.content > div:nth-child(1) { display: flex; align-items: inherit; justify-content: flex-end; width: 575px; flex-wrap: wrap;}
+.blanco{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    border: 1px solid #f9f9f9;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+.divBuscador {
+    width: 100%;
+    margin-top: 30px;
+}
+.divBuscador h1 {
+    text-align: center;
+    color: #333333;
+    font-family: 'AvenirNextLTPro-Medium', sans-serif;
+    font-size: 32px;
+}
+.bold {font-family: 'Avenir_Next_Bold', sans-serif;}
+.divBuscador .copy {
+    text-align: center;
+    color: #333333;
+    font-family: 'AvenirNextLTPro-Medium', sans-serif;
+    font-size: 15px;
+}
+.inputBuscador {
+    margin: 35px 0;
+}
+input {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+.inputLabel{
+    color: #a9a9a9;
+}
+.inputBuscador .inputLabel {
+    color: #a9a9a9;
+    font-size: 9px;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+}
+.btnVerde {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;    
+}
+.btnPrimario {
+    display: block;
+    text-align: center;
+    background-color: #40af29;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Avenir_Next_Bold', sans-serif;
+    font-size: 11px;
+    padding: 11px 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 250px;
+    line-height: 12px;
+}
+#inputBuscador  input:focus {
+    -webkit-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
+    -moz-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
+    box-shadow: 0px 2px 2px -1px rgba(168,166,168,1);
+}
+.inputFecha input:focus {border: 1px solid #40af29;}
+.textoVerde {color: #40af29 !important;}
+
+.divBloque2 {
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.divBloque2 h1 {
+    box-sizing: border-box;
+    text-align: center;
+    color: #333333;
+    font-family: 'AvenirNextLTPro-Medium', sans-serif;
+    padding: 42px 3px 38px 3px;
+    
+}
+.divInfoCliente {
+    color: #333333;
+    font-size: 14px;
+}
+.divInfoCliente .nombre{
+    font-family: 'Avenir_Next_Bold', sans-serif;
+}
+.divInfoCliente .infoGeneral{
+    font-family: 'Avenir_Next_Regular', sans-serif;
+}
+.divInfoCliente .infoGeneral span {
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+}
+.fotoCliente img {
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid #a1a1a1;
+}
+.divClientes {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.divClientes:hover{
+    background-color: #e1f0d7;
+}
+.divClientesActive{
+    background-color: #e1f0d7;
+}
+.divCliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divCliente .fotoCliente {
+    width: 16%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.divInfoCliente {
+    width: 70%;
+    padding: 26px  15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999999;
+}
+.divClientes:last-of-type  .divInfoCliente,
+.divClientes:last-of-type .divCDP {
+    border-bottom:none;
+}
+.divCDP {
+    width: 13%;
+    padding: 26px 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999999;
+    text-align: center;
+}
+.divCDP span {
+    width: 100%;
+}
+.linkVerde {
+    text-align: center;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 11px;
+    margin: 20px 0;
+    cursor:pointer;
+}
+.linkVerde a{
+    text-decoration: none;
+}
+.btnBuscarCliente span {
+    position: relative;
+}
+.btnBuscarCliente:before{
+    content: '';
+    background-color: #fff;
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 31px;
+    -webkit-transform: scale(0.001, 0.001);
+    transform: scale(0.001, 0.001);
+}
+.btnBuscarCliente:focus {outline:none;}
+.btnBuscarCliente:focus {outline: 0;}
+.inputBuscar:focus {border: 1px solid #40af29;}
+
+/*Bloque Información Cliente*/
+.informacionCliente {
+    background-color: #ffffff;
+    -moz-box-shadow: 0px 2px 4px -1px #a8a6a8;
+    -webkit-box-shadow: 0px 2px 4px -1px #a8a6a8;
+    box-shadow: 0px 2px 4px -1px #a8a6a8;
+    margin-top: 30px;
+}
+.detalleUsuario .col5 {
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+.detalleUsuario .col7 {
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border-left: 1px solid #b1b2ab;
+}
+.detalleUsuario .nombre {
+    color:#999999;
+    font-size: 16px;
+    font-family: 'AvenirNextLTPro-Medium';
+}
+.flex {display: flex;}
+.detalleUsuario .fotoCliente {
+    margin-right: 15px;
+}
+.tblCliente {
+    width: 100%;
+    border-spacing: 0 !important;
+    border-collapse: initial;
+    font-family: 'Avenir_Next_Regular';
+    color: #363636;
+}
+.tblCliente tr td {
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+.tblCliente tr td:first-of-type {text-align: left;}
+.tblCliente tr td:last-of-type {text-align: right;}
+.tblCliente tr:nth-child(odd) td{
+    background-color: #f8f9f8;
+}
+.tblCliente tr:nth-child(even) td {
+    background-color: #ffffff;
+}
+.textoGris {
+    color: #777777 !important;
+}
+.detalleUsuario h3 {
+    color: #333333;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'AvenirNextLTPro-Medium';
+    margin: 25px 0 30px 0;
+}
+.divSeleccionaPlazos {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.btnContinuar {
+    max-width: 300px;
+}
+/*radios de plazos*/
+
+.divSeleccionaPlazos .mat-radio-button {
+    margin-bottom: 22px;
+}
+.divSeleccionaPlazos .mat-radio-group {
+    font-size: 16px;
+}
+
+.tb_head{
+    display:table;
+    width:100%;
+}
+.cll_header{
+    display:table-cell;
+    vertical-align:middle;
+   
+}
+
+.tb_head div.cll_header:nth-child(1){
+    width:10%;
+    font-size:3.2em;
+    color:#40af29;
+    text-align:center;
+    font-family: "Avenir_Next_Bold", sans-serif;
+ 
+}
+.tb_head div.cll_header:nth-child(2){
+    width:90%;
+    font-size:1.2em;
+    text-align:left;
+    font-family: "AvenirNextLTPro-Medium", sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.tbCancelacion th {
+    white-space: nowrap;
+}
+table.tbCancelacion th {
+    text-align: center;
+}
+table.tbCancelacion th {
+    text-align: left;
+    line-height: 1.2em;
+    color: #b4a373;
+    border-bottom: 1px solid #b4a373;
+    padding: 3px 3px 7px 3px;
+    font-weight: 100;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+

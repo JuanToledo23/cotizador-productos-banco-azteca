@@ -1,1 +1,432 @@
-<p>cancelacion-despues-entrega works!</p>
+<div class="contSecc">
+    <div class="">
+        <div class="admnCont">
+            <div class="blanco divBuscador" *ngIf="busquedaCancelacion">
+                <div class="divBloque1">
+                    <h1><span class="bold">Cancelación</span> después de entrega</h1>
+                    <div class="copy">Busca a tu cliente por nombre, RFC o cliente único</div>
+                    <mat-tab-group >
+                        <mat-tab label="Nombre">
+                            <div class="divCol divFormularioTicket">
+                                <div class="col12">
+                                    <div class="inputLabel  labelNombre">Nombre(s):</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col6">
+                                    <div class="inputLabel  labelNombre">Apellido paterno:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col6">
+                                    <div class="inputLabel  labelNombre">Apellido materno:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                                <div class="col12">
+                                    <div class="inputLabel labelNombre">Fecha de nacimiento:</div>
+                                    <input type="text" id="tags" class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="RFC">
+                            <div class="inputBuscador">
+                                <div class="inputLabel labelNombre">RFC:</div>
+                                <div class="autocomplete ui-widget" style="width: 100%;">
+                                    <input type="text"  class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="Cliente único">
+                            <div class="inputBuscador">
+                                <div class="inputLabel labelNombre">Número de Cliente único:</div>
+                                <div class="autocomplete ui-widget" style="width: 100%;">
+                                    <input type="number" id="tags" class="inputBuscar">
+                                </div>
+                            </div>
+                        </mat-tab>
+                    </mat-tab-group>
+                    <div class="btnVerde">
+                        <button mat-button class="btnPrimario btnBuscarCliente" (click)= showResultados()>Buscar cliente</button>
+                    </div>
+                </div>
+            </div>
+            <div class="divBloque2" *ngIf="resultadosCancelacion">
+                <h1>¿Cuál de ellos es tu cliente?</h1>
+                <a class="divClientes" (click)=showDetallesCliente()>
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Juan Alberto Venegas López</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$385</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="divClientes">
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Aldo Ramiro Cruz Manzanares Lara</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$325</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="divClientes">
+                    <div class="divCliente">
+                        <div class="fotoCliente">
+                            <img src="assets/img/userCliente.svg" alt="imgcliente">
+                        </div>
+                        <div class="divInfoCliente">
+                            <div class="nombre">Alberto Gamboa Ruíz</div>
+                            <div class="infoGeneral">
+                                <span>Cliente único:</span>  0101-0113-8197-2467
+                            </div>
+                        </div>
+                        <div class="divCDP">
+                            <span class="bold textoVerde">CDP</span><br>
+                            <span class="bold" style="color: #000000;">$100</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="linkVerde">
+                    <a class="textoVerde btnNuevaBusqueda" (click)=volverBuscar()>Volver a buscar</a>
+                </div>
+            </div>
+        </div>
+        <div class="informacionCliente" *ngIf="detallesClienteCancelacion">
+            <div class="col12">
+                <div class="divCol detalleUsuario">
+                    <div class="col5">
+                        <div class="flex">
+                            <div class="fotoCliente">
+                                <img src="assets/img/userCliente.svg" alt="imgcliente">
+                            </div>
+                            <div class="nombre"><span class="bold" style="color: #363636;font-size: 21px;">Juan Alberto</span> <br> Venegas López</div>
+                        </div>
+                        <br>
+                        <div class="col12">
+                            <table class="tblCliente">
+                                <tbody>
+                                    <tr>
+                                        <td>Cliente único</td>
+                                        <td class="bold textoGris">1001-1322-0012</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capacidad de pago</td>
+                                        <td class="bold textoGris">$350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capacidad de pago disponible</td>
+                                        <td class="bold">$320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col12" style="padding: 5px 8px;box-sizing: border-box;margin-top: 5px;">
+                            <div style="color: #363636;font-family: 'Avenir_Next_Regular';margin-bottom: 10px;">Dirección</div>
+                            <div style="color: #363636;font-size: 14px;font-family: 'Avenir_Next_Demi_Bold';">
+                                Cuauhtémoc 10-3, Col. Barrio La Lonja. CP 14268
+                                Delegación Tlalpan, CDMX
+                            </div>
+                        </div>
+                        <div class="linkVerde">
+                            <a class="textoVerde btnNuevaBusqueda" (click)=buscarOtroCliente()>Busca otro cliente</a>
+                        </div>
+                    </div>
+                    <div class="col7">
+
+                        <div class="tb_head">
+                            <div class="cll_header">
+                                <div class="num_grande">1</div>
+                            </div>
+                            <div class="cll_header">
+                                Selecciona uno de los pedidos más recientes,<br>
+                                también puedes utilizar el filtro por número de pedido
+                            </div>
+                        </div>
+                       
+                        <!-- <div class="divSeleccionaPlazos">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1">13 semanas – Importe máximo de venta sin financiamiento: <span class="bold">$1,344</span></mat-radio-button>
+                                <mat-radio-button value="2">26 semanas – Importe máximo de venta sin financiamiento: <span class="bold">$2,462</span></mat-radio-button>
+                                <mat-radio-button value="3">39 semanas – Importe máximo de venta sin financiamiento: <span class="bold">$3,407</span></mat-radio-button>
+                            </mat-radio-group>
+                        </div> -->
+
+                        <div class="col12">
+                            <table class="tbCancelacion">
+                                <tbody>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Pedido</th>
+                                        <th>Descripción</th>
+                                        <th>Fecha y hora</th>
+                                      
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            SamsungTV 21" MCL21N11
+                                        </td>
+
+                                        <td class="textoGris">
+                                            01/02/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            13:00:00
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="2"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            MUEBLE QUALLY GRUPO "D"
+                                        </td>
+
+                                        <td class="textoGris">
+                                            25/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            16:24:00
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="3"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            MUEBLE QUALLY GRUPO "LUNE"
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            M00A3001 / MUEBLE QUALLY GRUPO
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </td>
+                                        <td class="textoGris">
+                                            83990286
+                                        </td>
+
+                                        <td class="textoGris">
+                                            Descripción de pedido más largo de lo habitual pero que puede suceder
+                                        </td>
+
+                                        <td class="textoGris">
+                                            12/01/2020
+                                        </td>
+                                        <td class="textoGris">
+                                            20:00:45
+                                        </td>
+                                    </tr>
+                                   
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btnVerde">
+                            <button mat-button class="btnPrimario btnContinuar">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

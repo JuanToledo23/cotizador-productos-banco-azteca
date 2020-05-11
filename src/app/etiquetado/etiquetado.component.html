@@ -16,7 +16,7 @@
             <mat-tab label="Categoria">
               <div class="flex spaceBet">
                 <div class="w50 p5">
-                  <div class="labelSelect">Categoria</div>
+                  <div class="labelSelect inputLabel">Categoría</div>
                   <mat-select class="select">
                       <mat-option value="option1">Selecciona una categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
@@ -27,7 +27,7 @@
                   </mat-select>
                 </div>
                 <div class="w50 p5">
-                  <div class="labelSelect">Sub categoria</div>
+                  <div class="labelSelect inputLabel">Sub categoría</div>
                   <mat-select class="select">
                       <mat-option value="option1">Selecciona una sub-categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
@@ -41,9 +41,13 @@
               </div>
             </mat-tab>
             <mat-tab label="SKU">
+              <div class="">
+                <div class="inputLabel">SKU</div>
+                <input type="text" class="inputBuscar">
+              </div>
             </mat-tab>
             <mat-tab label="Descripción">
-              <div class="p20">
+              <div class="">
                 <div class="inputLabel">Descripción del articulo</div>
                 <input type="text" class="inputBuscar">
               </div>
@@ -94,7 +98,7 @@
             <div class="tGris p20" style="font-size: 2em"><b>Sin resultados</b></div>
           </div>
           <div class="btnBottom">
-            <button mat-button class="btn btnSecundario  w80" [ngClass]="{'btnPrimario' : varBtnCheck ,'btnSecundario' : !varBtnCheck}" (click)=agregarAnadidos()>Añadir</button> 
+            <button mat-button class="btn btnSecundario  w80" [ngClass]="{'btnPrimario' : varBtnCheck ,'btnSecundario' : !varBtnCheck}" (click)=agregarAnadidos()>Añadir</button>
           </div>
         </div>
 
@@ -115,20 +119,20 @@
             <table class="tblGeneral" >
               <thead>
                 <tr>
-                  <th class="w10">&nbsp;</th>
                   <th class="w20">SKU</th>
                   <th class="w40 tLeft">Descripción</th>
                   <th class="w15">Código</th>
                   <th class="w15">Precio</th>
+                  <th class="w10">&nbsp;</th>
                 </tr>
               </thead>
               <tbody *ngIf = "varAnadidos">
                 <tr *ngFor="let articuloAnadido of articulosAnadidos;let i = index">
-                  <td><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
                   <td>{{articuloAnadido.sku}}</td>
                   <td class="tLeft">{{articuloAnadido.descripcion}}</td>
                   <td>{{articuloAnadido.codigo}}</td>
                   <td>{{articuloAnadido.precio}}</td>
+                  <td><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
                 </tr>
               </tbody>
             </table>

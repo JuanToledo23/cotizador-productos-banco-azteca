@@ -12,12 +12,12 @@
             <span class="tVerde">1</span>
             Busca los artículos a etiquetar
           </div>
-          <mat-tab-group id="tabsEtiquetas" (mat-selectedTabChange)="tabChanged($event)">
+          <mat-tab-group id="tabsEtiquetas">
             <mat-tab label="Categoria">
               <div class="flex spaceBet">
                 <div class="w50 p5">
                   <div class="labelSelect">Categoria</div>
-                  <mat-select class="select" [(value)]="selected">
+                  <mat-select class="select">
                       <mat-option value="option1">Selecciona una categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
                       <mat-option value="option3">Option 3</mat-option>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="w50 p5">
                   <div class="labelSelect">Sub categoria</div>
-                  <mat-select class="select" [(value)]="selected">
+                  <mat-select class="select">
                       <mat-option value="option1">Selecciona una sub-categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
                       <mat-option value="option3">Option 3</mat-option>
@@ -158,7 +158,7 @@
           </div>
 
           <div class="btnBottom">
-            <button mat-button class="btn btnPrimario w80" (click)=showResultados()>Guardar etiqueta</button>
+            <button mat-button class="btn btnPrimario w80">Guardar etiqueta</button>
           </div>
         </div>
 

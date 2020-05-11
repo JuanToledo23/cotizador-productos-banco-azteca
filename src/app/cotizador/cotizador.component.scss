@@ -1,15 +1,90 @@
+// Estilos generales
+.blanco{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    border: 1px solid #f9f9f9;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+.userPic {
+    background-image: url(/assets/img/user.jpg);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    border: solid 1px grey;
+    min-width: 50px;
+    min-height: 50px;
+    margin-left: 15px;
+}
+.linkVerde {
+    text-align: center;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 11px;
+    margin: 20px 0;
+}
+.linkVerde a{
+    text-decoration: none;
+}
+.textoVerde {color: #40af29!important;}
+
+.inputBuscador {
+    margin: 35px 0;
+}
+input {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 12px;
+    outline: none;
+}
+input .bucador {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+input[type=text]:focus {border: 1px solid #40af29;}
+
+.contSlider { padding-top: 5px; }
+.slider { width: 100%; }
+.labelSlider {
+    font-size: 12px;
+    color: #a9a9a9;
+}
+.scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 390px;
+}
+
+// --------------------------------_
 .contCotizador {
     width: 90%;
     margin: 0 auto;
 }
+.contCotizador > div { margin-bottom: 30px; }
 .cotizador {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: nowrap;
 }
 .cotizador .blanco { padding: 25px; }
 .cotizador .cardUsuario { width: 40%; }
-.cotizador .contBusquedaFiltro { width: 59%; }
+.cotizador .contBusquedaFiltro { width: 57%; }
 .nombreUsuario {
     display: flex;
     justify-content: flex-start;
@@ -48,43 +123,80 @@
 .cotizador .linkVerde {
     margin-bottom: 0px;
 }
-.contProductos {
-    margin-top: 30px;
+.contProductos { margin-top: 30px; }
+.contProductos div { margin-bottom: 30px; }
+.scroll{
+    max-height: 200px;
+    overflow: scroll;
+    position: relative;
 }
-.contProductos div {
-    margin-bottom: 30px;
-}
-
-// Estilos generales
-.blanco{
+.tablaProductos thead tr th {
+    position: sticky;
+    top: 0;
     background-color: #ffffff;
-    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    border: 1px solid #f9f9f9;
-    padding: 35px 45px;
-    box-sizing: border-box;
+    border-collapse: separate!important;
 }
-.userPic {
-    background-image: url(/assets/img/user.jpg);
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
-    border: solid 1px grey;
-    min-width: 50px;
-    min-height: 50px;
-    margin-left: 15px;
-  }
-  .linkVerde {
-    text-align: center;
-    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
-    font-size: 11px;
-    margin: 20px 0;
+.tablaProductos tr th:nth-child(1), .tablaProductos tr td:nth-child(1) { text-align: right; }
+.tablaProductos tr th:nth-child(3), .tablaProductos tr td:nth-child(3) { text-align: left; }
+.tablaProductos tr td {
+    font-size: 10px;
+    font-family: 'AvenirNextLTPro-Medium';
 }
-.linkVerde a{
-    text-decoration: none;
+.tablaAbonos tr th,
+.tablaAbonos tr td {
+    text-align: right;
 }
-.textoVerde {color: #40af29 !important;}
+.tblResultados{
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+.tblResultados span {
+    font-size: 10px;
+    color: #a9a9a9;
+}
+.contSliderToggle {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center
+}
+.contenedorServicios {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorServicios > div:nth-child(1){
+    width: 14%;
+}
+.contenedorServicios > div:nth-child(2){
+    width: 36%;
+}
+.contenedorServicios > div:nth-child(3){
+    width: 19%;
+}
+.contenedorServicios > div:nth-child(4){
+    width: 24%;
+}
+.contEnganche {
+    display: flex;
+    flex-direction: column;
+}
+.contEnganche > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.contEnganche > div:nth-child(2) div { width: 45%; }
+.txtMin {
+    font-size: 10px;
+    color: #A9A9A2;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+.txtMax {
+    font-size: 10px;
+    color: #A9A9A2;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}

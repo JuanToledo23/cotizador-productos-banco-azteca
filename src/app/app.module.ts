@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material-module';
+import { Ng5SliderModule } from 'ng5-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDialogModule} from '@angular/material/dialog';
+import { DialogHuella } from './tickets-abarrotes/dialogs/dialogHuella';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     TicketsAbarrotesComponent,
     EtiquetadoComponent,
     CancelacionDespuesEntregaComponent,
-    SurtimientoComponent
+    SurtimientoComponent,
+    DialogHuella
   ],
   imports: [
     BrowserModule,
@@ -36,10 +40,15 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatDialogModule
+    MatDialogModule, 
+    MatCheckboxModule,
+    Ng5SliderModule
   ],
   exports: [
     MaterialModule
+  ],
+  entryComponents: [
+    DialogHuella
   ],
   providers: [],
   bootstrap: [AppComponent]

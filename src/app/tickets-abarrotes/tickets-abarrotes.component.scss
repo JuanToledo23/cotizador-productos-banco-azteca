@@ -11,14 +11,31 @@ input::-webkit-inner-spin-button {
     width: 94%;
     margin: 0 auto;
 }
-.divFormularioTicket > div{
-    margin-bottom: 14px;
+.btnVerde {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;    
 }
-.divFormularioTicket > div:last-of-type{
-    margin-bottom: 0;
+.btnPrimario {
+    display: block;
+    text-align: center;
+    background-color: #40af29;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Avenir_Next_Bold', sans-serif;
+    font-size: 11px;
+    padding: 11px 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 250px;
+    line-height: 12px;
 }
-.admnCont { width: 60%; display: block;margin: 0 auto 11px auto; }
-.content > div:nth-child(1) { display: flex; align-items: inherit; justify-content: flex-end; width: 575px; flex-wrap: wrap;}
 .blanco{
     background-color: #ffffff;
     -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
@@ -28,6 +45,18 @@ input::-webkit-inner-spin-button {
     padding: 35px 45px;
     box-sizing: border-box;
 }
+.admnCont { width: 60%; display: block;margin: 0 auto 11px auto; }
+
+
+.divFormularioTicket > div{
+    margin-bottom: 14px;
+}
+.divFormularioTicket > div:last-of-type{
+    margin-bottom: 0;
+}
+
+.content > div:nth-child(1) { display: flex; align-items: inherit; justify-content: flex-end; width: 575px; flex-wrap: wrap;}
+
 .divBuscador {
     width: 100%;
     margin-top: 30px;
@@ -60,45 +89,22 @@ input {
     outline: none;
 }
 .inputLabel{
-    color: #a9a9a9;
-}
-.inputBuscador .inputLabel {
-    color: #a9a9a9;
-    font-size: 9px;
+    font-size: 12px;
     font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+    color: #a9a9a9;
 }
-.btnVerde {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 20px;    
-}
-.btnPrimario {
-    display: block;
-    text-align: center;
-    background-color: #40af29;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Avenir_Next_Bold', sans-serif;
-    font-size: 11px;
-    padding: 11px 3px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
-    -moz-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
-    box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 250px;
-    line-height: 12px;
-}
-#inputBuscador  input:focus {
-    -webkit-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
-    -moz-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
-    box-shadow: 0px 2px 2px -1px rgba(168,166,168,1);
-}
-.inputFecha input:focus {border: 1px solid #40af29;}
+
+
+input:focus + .inputLabel {color: #40af29 !important;}
+input:focus {border: 1px solid #40af29;}
 .textoVerde {color: #40af29 !important;}
+
+.buscadorUnico {position: relative;}
+.buscadorUnico .inputLabel {
+    position: absolute;
+    top: -16px;
+    left: 0;
+}
 
 .divBloque2 {
     width: 100%;
@@ -278,5 +284,19 @@ input {
     margin-bottom: 22px;
 }
 .divSeleccionaPlazos .mat-radio-group {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+// .example-stretched-tabs {max-width: 490px;}
+
+
+@media screen and (max-width:850px){
+    .detalleUsuario .col5,
+    .detalleUsuario .col7 {
+        grid-column: auto / span 12;
+    }
+    .detalleUsuario .col7 {
+        border-left: none;
+        border-top: 1px solid #b1b2ab;
+    }
 }

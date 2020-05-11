@@ -1,0 +1,25 @@
+<mat-dialog-content class="dialogHuella">
+    <div class="cuadroch blanco2 ">
+        <div class="contModal flex" style="font-size:.7em;">
+            <div class="w50 p20 bgVerde flexCol justifyC" (click)="clickEvent()" [ngClass]="intento2 ? 'success' : 'bgRojo'">
+
+                <div class="flex justifyC p20 simplemodal-close" style="height:80%">
+                    <img src="assets/img/fingerprint.png" class="w100 p20">
+                </div>
+
+                <div class="textoBlanco tCenter" style="height:20%">
+                    <div class="bold">Escanea la huella del cliente</div>
+                    Intento {{numeroIntentos}}/3
+                </div>
+            </div>
+            <div class="w50">
+                <div class="tRight w100 p10">
+                    <a class="btnCerrarModal tVerde" mat-dialog-close><b>Cerrar</b></a>
+                </div>
+                <div class="p10">
+                    <img src="assets/img/beto.png" class="w100">
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>

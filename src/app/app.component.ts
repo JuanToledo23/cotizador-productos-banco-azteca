@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { element } from 'protractor';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,15 @@ import { element } from 'protractor';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
   title = 'Migracion-Canales-Terceros';
   opened: boolean;
   rutaPosicion = 'Cotización';
   rutaActivada = true;
+
+  close() {
+    this.sidenav.close();
+  }
 
   validaRuta(e) {
     if (e === 0) {

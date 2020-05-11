@@ -5,7 +5,7 @@
                 <div class="divBloque1">
                     <h1>Ticket de <span class="bold">abarrotes</span></h1>
                     <div class="copy">Busca a tu cliente por nombre, RFC o cliente único</div>
-                    <mat-tab-group >
+                    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
                         <mat-tab label="Nombre">
                             <div class="divCol divFormularioTicket">
                                 <div class="col12">
@@ -27,19 +27,15 @@
                             </div>
                         </mat-tab>
                         <mat-tab label="RFC">
-                            <div class="inputBuscador">
-                                <div class="inputLabel labelNombre">RFC:</div>
-                                <div class="autocomplete ui-widget" style="width: 100%;">
-                                    <input type="text"  class="inputBuscar">
-                                </div>
+                            <div class="inputBuscador buscadorUnico">
+                                <input type="number" id="inputClienteUnico" class="inputBuscar">
+                                <label class="inputLabel labelNombre" for="inputClienteUnico">RFC:</label>
                             </div>
                         </mat-tab>
                         <mat-tab label="Cliente único">
-                            <div class="inputBuscador">
-                                <div class="inputLabel labelNombre">Número de Cliente único:</div>
-                                <div class="autocomplete ui-widget" style="width: 100%;">
-                                    <input type="number" id="tags" class="inputBuscar">
-                                </div>
+                            <div class="inputBuscador buscadorUnico">
+                                <input type="number" id="inputClienteUnico" class="inputBuscar">
+                                <label class="inputLabel labelNombre" for="inputClienteUnico">Número de Cliente único:</label>
                             </div>
                         </mat-tab>
                     </mat-tab-group>
@@ -156,7 +152,7 @@
                             </mat-radio-group>
                         </div>
                         <div class="btnVerde">
-                            <button mat-button class="btnPrimario btnContinuar">Continuar</button>
+                            <button mat-button class="btnPrimario btnContinuar" (click)="abrirModalHuella()">Continuar</button>
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
     -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
     box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
     border: 1px solid #f9f9f9;
-    padding: 35px 45px;
+    padding: 30px 35px;
     box-sizing: border-box;
 }
 .divBuscador {
@@ -301,7 +301,7 @@ input {
 }
 .tb_head div.cll_header:nth-child(2){
     width:90%;
-    font-size:1.2em;
+    font-size:0.9em;
     text-align:left;
     font-family: "AvenirNextLTPro-Medium", sans-serif;
 }
@@ -327,4 +327,203 @@ table.tbCancelacion th {
     -moz-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
+.clear{clear: both;}
 
+.tblResultados span {
+    font-size: 10px;
+    color: #a9a9a9;
+    float:right;
+    margin-bottom:10px;
+    margin-top:20px;
+  }
+
+  .tb_buscador{
+      width:100%;
+      display:table;
+  }
+  .cll_buscador{
+      display:table-cell;
+      vertical-align:bottom;
+  }
+
+  .tb_buscador div.cll_buscador:nth-child(1){
+      width: 50%;
+  }
+
+  .bn_buscador{
+      width:34px;
+      height:34px;
+      background-color:#ffffff;
+      border:1px solid #40af29;
+      border-radius:4px;
+      outline:none;
+      margin-left:20px;
+      cursor:pointer;
+  }
+
+  .bn_buscador img{
+      width:16px;
+      height:16px;
+      vertical-align:middle;
+    }
+   .titulo_buscador{
+        font-size:0.8em;
+    color:#777777;
+    margin-bottom:6px;
+   }
+
+.nw_buscador::-webkit-input-placeholder { 
+    font-size:0.7em;
+    font-weight:100;
+}
+  
+.nw_buscador:-ms-input-placeholder {
+    font-size:0.7em;
+    font-weight:100;
+}
+  
+.nw_buscador::placeholder {
+    font-size:0.7em;
+    font-weight:100;
+  }
+.cont_buscador{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.verificacion_detalles{
+    font-size:0.8em;
+    font-family: "Avenir_Next_Bold", sans-serif;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.aw50{
+    width:46%;
+    float:left;
+    height:240px;
+    position: relative;
+}
+
+.dw60{
+    width:59%;
+    float:left;
+    height:240px;
+    position: relative;
+ 
+}
+.dw40{
+    width:40%;
+    float:left;
+    height:240px;
+    position: relative;
+ 
+}
+.ml20{
+    padding-right:1%;
+}
+.ml30{
+    margin-right:20px;
+}
+
+.b_bottom{
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width:100%;
+    max-width:100% ;
+}
+
+
+.observaciones{
+    resize: none;
+    width: 94%;
+    height: 100px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #A9A9A2;
+    padding: 10px 10px 10px 10px;
+}
+
+.tn_seccion{
+    color: #363636;
+    font-size: 0.7em;
+    font-family: "Avenir_Next_Demi_Bold";
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.sbn_seccion{
+   color: #a9a9a9;
+   font-size:0.8em; 
+}
+
+.btnSecundario{
+    background-color: #b0b1ab;
+    color: #ffffff;
+}
+
+.mat-option:hover:not(.mat-option-disabled),
+.mat-option:focus:not(.mat-option-disabled) {
+    background: rgb(65, 175, 42);
+    color: #ffffff!important;
+}
+.mat-option.mat-active {
+    background-color: #41af2a4f !important;
+    color: #ffffff!important;
+}
+
+.nombreUsuario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.userPic{
+    background-image: url("../../assets/img/user.jpg");
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    border: solid 1px grey;
+    min-width: 50px;
+    min-height: 50px;
+    margin-left: 15px;
+}
+.nombreUsuario > div:nth-child(2) {
+    margin-left: 15px;
+}
+
+.nombreUsuario h2{
+    margin: 0px;
+    font-size: 20px;
+    font-family: "AvenirNextLTPro-Medium";
+}
+.nombreUsuario h3{
+    margin: 0px;
+    font-size: 16px;
+    color: #a2a2a2;
+    font-family: "Avenir_Light";
+}
+.scroll{
+    max-height: 200px;
+    overflow: scroll;
+    position: relative;
+}
+
+table.tblGeneral.tablaProductos tr td{
+    font-size: 10px;
+}
+
+.mat-select-value {
+    display: table-cell;
+    max-width: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.7em;
+}

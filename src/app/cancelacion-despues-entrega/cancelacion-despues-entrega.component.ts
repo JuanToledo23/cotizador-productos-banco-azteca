@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class CancelacionDespuesEntregaComponent implements OnInit {
   busquedaCancelacion=true;
   resultadosCancelacion= false;
+
+  detallesClienteCancelacion=false;
+  verificacionCliente= false;
+
+  selected = 'option1';
+
   showResultados(){
     this.resultadosCancelacion=true;
     this.busquedaCancelacion=false;
@@ -16,7 +22,7 @@ export class CancelacionDespuesEntregaComponent implements OnInit {
     this.resultadosCancelacion=false;
     this.busquedaCancelacion=true;
   }
-  detallesClienteCancelacion=false;
+ 
   showDetallesCliente(){
     this.detallesClienteCancelacion=true;
     this.resultadosCancelacion=false;
@@ -28,9 +34,45 @@ export class CancelacionDespuesEntregaComponent implements OnInit {
     this.busquedaCancelacion=true;
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  filtrar_dato(){
+    this.detallesClienteCancelacion = false;
+    this.verificacionCliente = true;
   }
 
+  constructor() { }
+
+  ngOnInit() { }
+ 
+
+
+  productos = [
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {pedido: 83990286, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    
+  ];
+
+  articulos = [
+    {articulo: 2, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
+    {descripcion: 'Mueble Qually para televisión, número de serie MCL21N11'},
+    
+  ];
+
+
 }
+

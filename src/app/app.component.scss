@@ -32,7 +32,7 @@
 }
 
 .userPic {
-  background-image: url(/assets/img/user.jpg);
+  background-image: url(../assets/img/user.jpg);
   height: 30px;
   width: 30px;
   background-size: cover;
@@ -79,7 +79,7 @@
 }
 
 .btnMenu img {
-  padding: 15px 0px;
+  padding: 11px 0px;
   width: 21px;
 }
 
@@ -105,9 +105,9 @@
   border-top-color: #bbbcb6;
 }
 
-.mat-drawer-container {
-  height: 100%;
-}
+// .mat-drawer-container {
+//   height: 100%;
+// }
 
 .mat-drawer-container {
   background-color: transparent;
@@ -118,6 +118,9 @@
 }
 .userSaludo {
   font-size: 13px;
+}
+.header2 .mat-button {
+  min-width: 0px!important;
 }
 
 

@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './etiquetado.component.html',
   styleUrls: ['./etiquetado.component.scss']
 })
+
 export class EtiquetadoComponent implements OnInit {
 
   constructor() { }
@@ -33,19 +34,48 @@ export class EtiquetadoComponent implements OnInit {
 
   varDescripcion = false;
 
+  varBtnCheck = false;
+
   showResultadosEtiquetas(){
     this.varDescripcion = true;
   }
 
+  checkEvaluacion (articuloEtiqueta){
+    this.varBtnCheck = false;
+    articuloEtiqueta.check = !articuloEtiqueta.check;
+
+    this.articulosEtiquetas.forEach(element => {
+      if (element.check){
+        this.varBtnCheck = true;
+      }
+    })
+  }
+
   agregarAnadidos(){
-    console.log("HOLA");
+
     this.articulosEtiquetas.forEach(element => {
       console.log(element);
       if (element.check === true){
-        console.log("si");
+
         this.articulosAnadidos.push(element);
       }
     });
+    this.verificaAnadidos();
+  }
+  varAnadidos  = false
+
+  delete(i){
+    this.articulosAnadidos.splice(i,1);
+    this.verificaAnadidos();
+  }
+
+  verificaAnadidos (){
+    console.log(this.articulosAnadidos.length);
+    if(this.articulosAnadidos.length === 0){
+      this.varAnadidos = false;
+    } else {
+      this.varAnadidos = true;
+    }
   }
 
 

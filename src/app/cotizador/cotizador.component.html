@@ -81,7 +81,7 @@
                         <th>SKU</th>
                         <th>Descripción</th>
                         <th>Precio</th>
-                        <th></th>
+                        <th></th> 
                     </tr>
                 </thead>
                  <tbody>
@@ -134,6 +134,11 @@
                     <div><input type="text" class="inputBuscar" placeholder="%"></div>
                 </div>
             </div>
+        </div>
+        <div *ngIf="ocultar2" class="btnRight">
+            <button mat-button class="btn btnLink">Guardar</button>
+            <button mat-button class="btn btnIcono"><img src="assets/img/icons/imprimirIco.svg" alt=""></button>
+            <button mat-button class="btn btnPrimario">Generar cotización</button>
         </div>
     </div>
 </div>

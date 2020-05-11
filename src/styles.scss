@@ -4,7 +4,6 @@
 @import "assets/css/_tabla.css";
 @import "assets/css/_modales.css";
 @import "assets/css/_select.css";
-@import "./assets/css/tabsEtiquetado.scss";
 @import "./assets/css/radioButton.scss";
 @import "./assets/css/_checkbox.scss";
 @import "assets/css/_rangeSlider.css";
@@ -59,4 +58,8 @@ body {
 
 .tVerde {
   color: #46b12e !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

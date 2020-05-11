@@ -124,7 +124,7 @@
               </thead>
               <tbody *ngIf = "varAnadidos">
                 <tr *ngFor="let articuloAnadido of articulosAnadidos;let i = index">
-                  <td><img src="../assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
+                  <td><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
                   <td>{{articuloAnadido.sku}}</td>
                   <td class="tLeft">{{articuloAnadido.descripcion}}</td>
                   <td>{{articuloAnadido.codigo}}</td>

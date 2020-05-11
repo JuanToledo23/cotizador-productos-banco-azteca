@@ -13,9 +13,12 @@
 }
 .mat-tab-label{
     width: 33.33%;
-    height: 40px !important;
+    height: 45px !important;
     min-width: 139px !important;
     background-color: #40af29;
+}
+.mat-tab-label-content {
+    font-family: 'AvenirNextLTPro-Medium' !important;
 }
 .mat-tab-label-active {
     background-color: #40af29;

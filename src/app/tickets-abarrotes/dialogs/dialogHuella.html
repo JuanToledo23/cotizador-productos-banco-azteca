@@ -8,7 +8,8 @@
                 </div>
 
                 <div class="textoBlanco tCenter" style="height:20%">
-                    <div class="bold">Escanea la huella del cliente</div>
+                    <div class="bold" [ngClass]="intento2 ? 'success' : 'textoIntentoEscanea'">Escanea la huella del Cliente</div>
+                    <div class="textoHuellaIntentos" [ngClass]="intento2 ? 'success' : 'textoHuellaIntento2'">Mantenga el dedo en el sensor un poco más</div>
                     Intento {{numeroIntentos}}/3
                 </div>
             </div>

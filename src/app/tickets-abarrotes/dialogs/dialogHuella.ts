@@ -4,9 +4,9 @@ import {Component} from '@angular/core';
     templateUrl: 'dialogHuella.html',
 })
 export class DialogHuella {
-    intento2: boolean = true;
+  intento2: boolean = true;
   clickEvent(){
-    this.intento2 = false; 
+    this.intento2 = false;
     this.numeroIntentos++;      
   }
   numeroIntentos= 1;

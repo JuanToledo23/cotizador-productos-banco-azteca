@@ -1,19 +1,25 @@
 .mat-tab-group {
     margin-top: 20px;
 }
+.mat-tab-label:focus {
+    font-family: 'Avenir_Next_Bold', sans-serif;
+}
 .mat-tab-header {
     background-color: #40af29;
     color: #ffffff;
 }
 .mat-tab-body {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .mat-tab-label{
     width: 33.33%;
+    height: 40px !important;
+    min-width: 139px !important;
     background-color: #40af29;
 }
 .mat-tab-label-active {
     background-color: #40af29;
+    font-family: 'Avenir_Next_Bold', sans-serif !important;
 }
 .mat-tab-group.mat-primary .mat-tab-label-active .mat-ink-bar {
     left: 0 !important;
@@ -21,7 +27,7 @@
     background-color: #85db60 !important;
     height: 3px !important;
 }
-.mat-tab-group.mat-primary .mat-ink-bar {background-color: #85db60 !important;}
+.mat-tab-group.mat-primary .mat-ink-bar {background-color: #85db60 !important;min-width: 139px !important;}
 .mat-tab-label .mat-tab-label-content {
     color: #ffffff;
 }

@@ -57,3 +57,6 @@
 .tRight {
     text-align: right !important;
 }
+.textoIntentoEscanea {display: none;}
+.textoHuellaIntentos {display: none;}
+.textoHuellaIntento2 {display: block;}

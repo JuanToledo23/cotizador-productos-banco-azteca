@@ -5,19 +5,19 @@
       <div class="tCenter">
         <h1 class="demiBold">Etiquetado</h1>
       </div>
-      <div class="flex p10 ">
+      <div class="flex p10 etiquetadoRow">
 
-        <div class="w50 p20 flexCol ">
+        <div class="w50 p20 flexCol">
           <div class="tituloEtiquetas">
             <span class="tVerde">1</span>
             Busca los artículos a etiquetar
           </div>
-          <mat-tab-group id="tabsEtiquetas" (mat-selectedTabChange)="tabChanged($event)">
+          <mat-tab-group id="tabsEtiquetas">
             <mat-tab label="Categoria">
               <div class="flex spaceBet">
                 <div class="w50 p5">
                   <div class="labelSelect">Categoria</div>
-                  <mat-select class="select" [(value)]="selected">
+                  <mat-select class="select">
                       <mat-option value="option1">Selecciona una categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
                       <mat-option value="option3">Option 3</mat-option>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="w50 p5">
                   <div class="labelSelect">Sub categoria</div>
-                  <mat-select class="select" [(value)]="selected">
+                  <mat-select class="select">
                       <mat-option value="option1">Selecciona una sub-categoría</mat-option>
                       <mat-option value="option2">Option 2</mat-option>
                       <mat-option value="option3">Option 3</mat-option>
@@ -52,7 +52,7 @@
             </mat-tab>
           </mat-tab-group>
 
-          <div class="btnVerde">
+          <div class="btnVerde btnBottom">
             <button mat-button class="btn btnPrimario btnBuscarCliente w80 " (click)=showResultadosEtiquetas()>Buscar</button>
           </div>
         </div>
@@ -64,32 +64,37 @@
             <span class="tVerde">2</span>
             Selecciona y añade los artículos para etiquetar
           </div>
-          <table class="tblGeneral" ngHide>
-            <thead>
-              <tr>
-                <th></th>
-                <th>SKU</th>
-                <th class="w40 tLeft">Descripción</th>
-                <th>Código</th>
-                <th>Precio</th>
-              </tr>
-            </thead>
-            <tbody *ngIf = "varDescripcion">
-              <tr *ngFor="let articuloEtiqueta of articulosEtiquetas">
-                <td><mat-checkbox [checked]="articuloEtiqueta.check"(change)="articuloEtiqueta.check = !articuloEtiqueta.check" [id]="articuloEtiqueta.id"></mat-checkbox></td>
-                <td>{{articuloEtiqueta.sku}}</td>
-                <td>{{articuloEtiqueta.descripcion}}</td>
-                <td>{{articuloEtiqueta.codigo}}</td>
-                <td>{{articuloEtiqueta.precio}}</td>
-              </tr>
+          <div class="tblScrolV">
+            <table class="tblGeneral">
+              <thead>
+                <tr>
+                  <th class="w10"></th>
+                  <th class="w20">SKU</th>
+                  <th class="w40 tLeft">Descripción</th>
+                  <th class="w15">Código</th>
+                  <th class="w15">Precio</th>
+                </tr>
+              </thead>
+              <tbody *ngIf = "varDescripcion">
+                <tr *ngFor="let articuloEtiqueta of articulosEtiquetas">
+                  <td>
+                    <mat-checkbox [checked]="articuloEtiqueta.check" (change)="checkEvaluacion(articuloEtiqueta)" [id]="articuloEtiqueta.id"></mat-checkbox>
+                  </td>
+                  <td>{{articuloEtiqueta.sku}}</td>
+                  <td class="tLeft">{{articuloEtiqueta.descripcion}}</td>
+                  <td>{{articuloEtiqueta.codigo}}</td>
+                  <td>{{articuloEtiqueta.precio}}</td>
+                </tr>
 
-            </tbody>
-          </table>
-          <div class="flex flexCenter" >
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex flexCenter h100" *ngIf = "!varDescripcion" >
             <div class="tGris p20" style="font-size: 2em"><b>Sin resultados</b></div>
           </div>
-          <div class="">
-            <button mat-button class="btn btnSecundario  w80" (click)=agregarAnadidos()>Añadir</button>
+          <div class="btnBottom">
+            <button mat-button class="btn btnSecundario  w80" [ngClass]="{'btnPrimario' : varBtnCheck ,'btnSecundario' : !varBtnCheck}" (click)=agregarAnadidos()>Añadir</button> 
           </div>
         </div>
 
@@ -99,34 +104,36 @@
 
   <div class="p5">
     <div class="blanco ">
-      <div class="flex p10 ">
+      <div class="flex p10 etiquetadoRow">
 
         <div class="w60 p20 flexCol ">
           <div class="tituloEtiquetas">
             <span class="tVerde">3</span>
             Verifica tus artículos añadidos
           </div>
-          <table class="tblGeneral">
-            <thead>
-              <tr>
-                <th class="w5">&nbsp;</th>
-                <th>SKU</th>
-                <th class="w40 tLeft">Descripción</th>
-                <th>Código</th>
-                <th>Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let articuloAnadido of articulosAnadidos">
-                <td><mat-checkbox [id]="articuloAnadido.id"></mat-checkbox></td>
-                <td>{{articuloAnadido.sku}}</td>
-                <td>{{articuloAnadido.descripcion}}</td>
-                <td>{{articuloAnadido.codigo}}</td>
-                <td>{{articuloAnadido.precio}}</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flex flexCenter">
+          <div class="tblScrolV">
+            <table class="tblGeneral" >
+              <thead>
+                <tr>
+                  <th class="w10">&nbsp;</th>
+                  <th class="w20">SKU</th>
+                  <th class="w40 tLeft">Descripción</th>
+                  <th class="w15">Código</th>
+                  <th class="w15">Precio</th>
+                </tr>
+              </thead>
+              <tbody *ngIf = "varAnadidos">
+                <tr *ngFor="let articuloAnadido of articulosAnadidos;let i = index">
+                  <td><img src="../assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
+                  <td>{{articuloAnadido.sku}}</td>
+                  <td class="tLeft">{{articuloAnadido.descripcion}}</td>
+                  <td>{{articuloAnadido.codigo}}</td>
+                  <td>{{articuloAnadido.precio}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="flex flexCenter h100" *ngIf = "!varAnadidos">
             <div class="tGris p20" style="font-size: 2em"><b>Sin articulos añadidos</b></div>
           </div>
 
@@ -150,8 +157,8 @@
 
           </div>
 
-          <div class="">
-            <button mat-button class="btn btnPrimario  w80" (click)=showResultados()>Buscar cliente</button>
+          <div class="btnBottom">
+            <button mat-button class="btn btnPrimario w80">Guardar etiqueta</button>
           </div>
         </div>
 

@@ -46,7 +46,7 @@
 .tLeft{text-align: left}
 .tRigh{text-align: right}
 
-.sepVer{border-left: 1px solid #b0b1ab;};
+.sepVer{border-left: 1px solid #b0b1ab; margin: 20px 0px};
 .sepHor{border-top: 1px solid #b0b1ab;};
 
 .mCenter { margin: 0 auto;}
@@ -114,7 +114,10 @@ input {
 }
 
 //Etiquetado
-
+.tituloEtiquetado {
+  padding: 0px;
+  font-size: 1.7em;
+}
 .tituloEtiquetas {
   display: flex;
   align-items: center;

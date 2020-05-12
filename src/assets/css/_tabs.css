@@ -14,14 +14,14 @@
 .mat-tab-label{
     min-width        : 0 !important;
     height           : auto !important;
-    padding          : 5px !important; 
+    padding          : 5px !important;
     background-color : #40af29;
     font-family      : 'Avenir_Next_Regular'!important;
     width: 100%;
 }
 .mat-tab-label-content {
     font-family: 'Avenir_Next_Demi_Bold' !important;
-    font-size : 0.9em !important;
+    font-size : 0.7em !important;
 }
 .mat-tab-label-active {
     background-color: #40af29;

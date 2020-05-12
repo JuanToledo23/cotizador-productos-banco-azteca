@@ -19,6 +19,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogHuella } from './tickets-abarrotes/dialogs/dialogHuella';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { DialogSurtir } from './cotizador/dialogs/dialogosSurtir';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     EtiquetadoComponent,
     CancelacionDespuesEntregaComponent,
     SurtimientoComponent,
-    DialogHuella
+    DialogHuella,
+    DialogSurtir
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MaterialModule
   ],
   entryComponents: [
-    DialogHuella
+    DialogHuella,
+    DialogSurtir
   ],
   providers: [],
   bootstrap: [AppComponent]

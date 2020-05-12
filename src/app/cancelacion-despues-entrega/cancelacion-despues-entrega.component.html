@@ -190,7 +190,7 @@
                                     </tr>
                                 </thead>
                                  <tbody>
-                                    <tr (click)="agregarProducto(producto)" *ngFor="let producto of productos">
+                                    <tr *ngFor="let producto of productos">
                                         <td>
                                             <mat-radio-button value="1" name="validar"></mat-radio-button>
                                          
@@ -284,7 +284,7 @@
                                     </tr>
                                 </thead>
                                  <tbody>
-                                    <tr (click)="agregarProducto(producto)" *ngFor="let articulo of articulos">
+                                    <tr *ngFor="let articulo of articulos">
                                         <td>{{articulo.articulo}}</td>
                                         <td>{{articulo.descripcion}}</td>
                                         <td>{{articulo.fhora}}</td>
@@ -343,135 +343,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="verificacionCliente" *ngIf="verificacionCliente">
-            <div class="dw50 ml20">
-                <div class="divCol detalleUsuario">
-                    <div class="col5">
-                        <div class="flex">
-                            <div class="fotoCliente">
-                                <img src="assets/img/userCliente.svg" alt="imgcliente">
-                            </div>
-                            <div class="nombre"><span class="bold" style="color: #363636;font-size: 21px;">Juan Alberto</span> <br> Venegas López</div>
-                        </div>
-                        <br>
-                        <div class="col12">
-                            <table class="tblCliente">
-                                <tbody>
-                                    <tr>
-                                        <td>Cliente único</td>
-                                        <td class="bold textoGris">1001-1322-0012</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Capacidad de pago</td>
-                                        <td class="bold textoGris">$350</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Capacidad de pago disponible</td>
-                                        <td class="bold">$320</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col12" style="padding: 5px 8px;box-sizing: border-box;margin-top: 5px;">
-                            <div style="color: #363636;font-family: 'Avenir_Next_Regular';margin-bottom: 10px;">Dirección</div>
-                            <div style="color: #363636;font-size: 14px;font-family: 'Avenir_Next_Demi_Bold';">
-                                Cuauhtémoc 10-3, Col. Barrio La Lonja. CP 14268
-                                Delegación Tlalpan, CDMX
-                            </div>
-                        </div>
-                        <div class="linkVerde">
-                            <a class="textoVerde btnNuevaBusqueda" (click)=buscarOtroCliente()>Busca otro cliente</a>
-                        </div>
-                    </div>
-
-                    
-                    <div class="col7">
-
-                        <div class="tb_head">
-                            <div class="cll_header">
-                                <div class="num_grande">2</div>
-                            </div>
-                            <div class="cll_header">
-                               Verifica el detalle del pedido, selecciona el motivo
-                               de Cancelación y escribe las observaciones correspondientes
-                            </div>
-                        </div>
-                        <div class="verificacion_detalles">
-                            Verifica el detalle del pedido 83990286
-                        </div>
-
-                        <div class="scroll">
-                            <table class="tblGeneral tablaProductos">
-                                <thead> 
-                                    <tr>
-                                        <th>Número de artículos</th>
-                                        <th>Descripción de artículos</th>
-                                        <th>Fecha y hora</th>
-                                    </tr>
-                                </thead>
-                                 <tbody>
-                                    <tr (click)="agregarProducto(producto)" *ngFor="let articulo of articulos">
-                                        <td>{{articulo.articulo}}</td>
-                                        <td>{{articulo.descripcion}}</td>
-                                        <td>{{articulo.fhora}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tblResultados"><span>Mostrando los 10 pedidos recientes</span></div>
-                        <div class="clear"></div>
-
-
-                        <div class="aw50 ml20">
-                            <div class="tn_seccion">
-                                Selecciona el motivo de cancelación
-                            </div>
-                            <div class="sbn_seccion">
-                                Motivo de cancelación
-                            </div>
-
-                            <mat-select class="select" [(value)]="selected">
-                                <mat-option value="option1">Selecciona un motivo de cancelación</mat-option>
-                                <mat-option value="option2">030 - Mejor precio con la competencia</mat-option>
-                                <mat-option value="option3">034 - No le gusta</mat-option>
-                                <mat-option value="option4">043 - No funciona</mat-option>
-                                <mat-option value="option5">230 - Cancelación de Tarjeta Azteca</mat-option>
-                                <mat-option value="option6">300 - Falta de servicio del proveedor</mat-option>
-                            </mat-select>
-
-                            <div class="btnVerde">
-                                <button mat-button class=" btnPrimario btnSecundario  b_bottom btnContinuar">Regresar</button>
-                            </div>
-
-                        </div>
-
-                        <div class="aw50">
-                            <div class="tn_seccion">
-                               Escribe las observaciones correspondientes
-                            </div>
-                            <div class="sbn_seccion">
-                                observaciones
-                            </div>
-                            <textarea class="observaciones" placeholder="Escríbe tus observaciones"></textarea>
-
-                            <div class="btnVerde">
-                                <button mat-button class="btnPrimario  b_bottom btnContinuar">Finalizar</button>
-                            </div>
-                        </div>
-
-
-                      
-                      
-                        
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-
-
 
 
 

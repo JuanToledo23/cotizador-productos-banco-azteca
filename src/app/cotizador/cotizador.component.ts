@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Options, LabelType } from 'ng5-slider';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogSurtir } from './dialogs/dialogosSurtir';
 
 @Component({
   selector: 'app-cotizador',
@@ -61,7 +63,7 @@ export class CotizadorComponent implements OnInit {
     }
   };
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
   ngOnInit() {}
 
   kFormatter(num) {
@@ -82,5 +84,12 @@ export class CotizadorComponent implements OnInit {
     {
       this.ocultar = true;
     }
+  }
+
+  abrirModalSurtir(){
+    const dialogRef = this.dialog.open(DialogSurtir);
+    dialogRef.afterClosed().subscribe(() => {
+      
+    });
   }
 }

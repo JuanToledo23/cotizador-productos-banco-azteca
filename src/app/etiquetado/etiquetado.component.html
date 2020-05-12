@@ -3,9 +3,9 @@
   <div class="p5">
     <div class="blanco ">
       <div class="tCenter">
-        <h1 class="demiBold">Etiquetado</h1>
+        <div class="demiBold tituloEtiquetado">Etiquetado</div>
       </div>
-      <div class="flex p10 etiquetadoRow">
+      <div class="flex etiquetadoRow">
 
         <div class="w50 p20 flexCol">
           <div class="tituloEtiquetas">
@@ -57,7 +57,7 @@
           </mat-tab-group>
 
           <div class="btnVerde btnBottom">
-            <button mat-button class="btn btnPrimario btnBuscarCliente w80 " (click)=showResultadosEtiquetas()>Buscar</button>
+            <button mat-button class="btn btnPrimario btnBuscarCliente w60 " (click)=showResultadosEtiquetas()>Buscar</button>
           </div>
         </div>
 
@@ -95,10 +95,10 @@
           </div>
 
           <div class="flex flexCenter h100" *ngIf = "!varDescripcion" >
-            <div class="tGris p20" style="font-size: 2em"><b>Sin resultados</b></div>
+            <div class="tGris p20" style="font-size: 1.8em"><b>Sin resultados</b></div>
           </div>
           <div class="btnBottom">
-            <button mat-button class="btn btnSecundario  w80" [ngClass]="{'btnPrimario' : varBtnCheck ,'btnSecundario' : !varBtnCheck}" (click)=agregarAnadidos()>Añadir</button>
+            <button mat-button class="btn btnSecundario  w60" [ngClass]="{'btnPrimario' : varBtnCheck ,'btnSecundario' : !varBtnCheck}" (click)=agregarAnadidos()>Añadir</button>
           </div>
         </div>
 
@@ -108,7 +108,7 @@
 
   <div class="p5">
     <div class="blanco ">
-      <div class="flex p10 etiquetadoRow">
+      <div class="flex etiquetadoRow">
 
         <div class="w60 p20 flexCol ">
           <div class="tituloEtiquetas">
@@ -138,7 +138,7 @@
             </table>
           </div>
           <div class="flex flexCenter h100" *ngIf = "!varAnadidos">
-            <div class="tGris p20" style="font-size: 2em"><b>Sin articulos añadidos</b></div>
+            <div class="tGris p20" style="font-size: 1.8em"><b>Sin articulos añadidos</b></div>
           </div>
 
         </div>
@@ -154,15 +154,15 @@
           <div class="flex justifyC p20">
 
             <mat-radio-group aria-label="mat-select an option" class="flexCol">
-              <mat-radio-button class="p10"  value="1">Carta</mat-radio-button>
-              <mat-radio-button class="p10" value="2">1/2 Carta</mat-radio-button>
-              <mat-radio-button class="p10"  value="3">1/4 Carta</mat-radio-button>
+              <mat-radio-button class="p5"  value="1">Carta</mat-radio-button>
+              <mat-radio-button class="p5" value="2">1/2 Carta</mat-radio-button>
+              <mat-radio-button class="p5"  value="3">1/4 Carta</mat-radio-button>
             </mat-radio-group>
 
           </div>
 
           <div class="btnBottom">
-            <button mat-button class="btn btnPrimario w80">Guardar etiqueta</button>
+            <button mat-button class="btn btnPrimario w60">Guardar etiqueta</button>
           </div>
         </div>
 

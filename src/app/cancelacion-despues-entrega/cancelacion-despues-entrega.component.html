@@ -190,7 +190,7 @@
                                     </tr>
                                 </thead>
                                  <tbody>
-                                    <tr (click)="agregarProducto(producto)" *ngFor="let producto of productos">
+                                    <tr *ngFor="let producto of productos">
                                         <td>
                                             <mat-radio-button value="1" name="validar"></mat-radio-button>
                                          
@@ -284,7 +284,7 @@
                                     </tr>
                                 </thead>
                                  <tbody>
-                                    <tr (click)="agregarProducto(producto)" *ngFor="let articulo of articulos">
+                                    <tr *ngFor="let articulo of articulos">
                                         <td>{{articulo.articulo}}</td>
                                         <td>{{articulo.descripcion}}</td>
                                         <td>{{articulo.fhora}}</td>
@@ -344,11 +344,14 @@
             </div>
         </div>
 
+<<<<<<< HEAD
  
 
 
 
 
+=======
+>>>>>>> 1111428b85fa316fe19c51e08793dd928efd39d8
 
 
 

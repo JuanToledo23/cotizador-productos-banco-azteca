@@ -8,6 +8,8 @@
 
 .mat-radio-ripple .mat-ripple-element {
   background-color : #46b12e !important;
+  transform: scale(.8)!important;
+  transform-origin: center !important;
 }
 
 .mat-radio-outer-circle {
@@ -17,4 +19,7 @@
 .mat-radio-label-content {
   font-family : 'AvenirNextLTPro-Medium',
                 sans-serif !important;
+}
+.mat-radio-container {
+  transform: scale(.8) !important;
 }

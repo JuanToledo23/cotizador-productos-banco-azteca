@@ -1,1 +1,172 @@
-<p>surtimiento works!</p>
+<div class="contSecc">
+    <div class="">
+        <div class="">
+            <div class="blanco divPresupuesto">
+                <div class="divCol">
+                    <div class="col4 flex alignICenter pRelative">
+                        <div class="tituloSeccion">Presupuesto:</div>
+                        <input type="text" class="inputBuscar marginLeft10 paddingRight31">
+                        <div class="iconoBuscar"></div>
+                    </div>
+                </div>
+                <div class="divCol desac">
+                    <div class="col4 pRelative">
+                        <div class="inputLabel">Número de Cliente:</div>
+                        <input type="text" class="inputNumero paddingRight31" placeholder="8328-0293-0932">
+                        <div class="iconoBuscar"></div>
+                    </div>
+                    <div class="col4">
+                        <div class="inputLabel">Nombre(s):</div>
+                        <input type="text" class="inputBuscar" placeholder="Haim">
+                    </div>
+                    <div class="col4 desac">
+                        <div class="inputLabel">Apellidos:</div>
+                        <input type="text" class="inputBuscar" placeholder="Sagrero">
+                    </div>
+                    <div class="col3">
+                        <div class="inputLabel">Calle:</div>
+                        <input type="text" class="inputBuscar" placeholder="Oriente">
+                    </div>
+                    <div class="col9">
+                        <div class="divCol">
+                            <div class="col2">
+                                <div class="inputLabel">Número:</div>
+                                <input type="text" class="inputNumero" placeholder="426">
+                            </div>
+                            <div class="col2">
+                                <div class="inputLabel">Interior:</div>
+                                <input type="text" class="inputNumero" placeholder="S/N">
+                            </div>
+                            <div class="col6">
+                                <div class="inputLabel">Colonia:</div>
+                                <input type="text" class="inputBuscar" placeholder="Vista Hermosa">
+                            </div>
+                            <div class="col2">
+                                <div class="inputLabel">Código Postal:</div>
+                                <input type="text" class="inputNumero" placeholder="23900">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <div class="inputLabel">Población:</div>
+                        <input type="text" class="inputBuscar" placeholder="Ciudad de México">
+                    </div>
+                    <div class="col3">
+                        <div class="inputLabel">Ciudad:</div>
+                        <input type="text" class="inputBuscar" placeholder="Ciudad de México">
+                    </div>
+                    <div class="col3">
+                        <div class="inputLabel">Teléfono:</div>
+                        <input type="text" class="inputNumero" placeholder="Ciudad de México">
+                    </div>
+                    <div class="col3">
+                        <div class="inputLabel">RFC:</div>
+                        <input type="text" class="inputNumero" placeholder="VELJ910216SJ6">
+                    </div>
+                </div>
+            </div>
+            <div class="blanco divPresupuesto">
+                <div class="tituloSeccion p5">Periodos de pago:</div>
+                <div class="divCol">
+                    <div class="col3">
+                        <div class="flex spaceBet">
+                            <div class="w50 p5">
+                              <mat-select class="select">
+                                  <mat-option value="option1">52</mat-option>
+                                  <mat-option value="option2">Option 2</mat-option>
+                                  <mat-option value="option3">Option 3</mat-option>
+                                  <mat-option value="option4">Option 4</mat-option>
+                                  <mat-option value="option5">Option 5</mat-option>
+                                  <mat-option value="option6">Option 6</mat-option>
+                              </mat-select>
+                            </div>
+                            <div class="w50 p5">
+                              <mat-select class="select">
+                                  <mat-option value="option1">Semanal</mat-option>
+                                  <mat-option value="option2">Option 2</mat-option>
+                                  <mat-option value="option3">Option 3</mat-option>
+                                  <mat-option value="option4">Option 4</mat-option>
+                                  <mat-option value="option5">Option 5</mat-option>
+                                  <mat-option value="option6">Option 6</mat-option>
+                              </mat-select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col9">
+                        <div class="scroll">
+                            <table class="tblGeneral tablaProductos">
+                                <thead> 
+                                    <tr>
+                                        <th>SKU</th>
+                                        <th>Descripción</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Descuentos</th>
+                                        <th>Especial</th>
+                                        <th>Subtotal</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                 <tbody>
+                                    <tr *ngFor="let producto of productos">
+                                        <td>{{producto.sku}}</td>
+                                        <td>{{producto.descripcion}}</td>
+                                        <td>{{producto.precio}}</td>
+                                        <td>{{producto.cantidad}}</td>
+                                        <td>{{producto.descuentos}}</td>
+                                        <td>{{producto.especial}}</td>
+                                        <td>{{producto.subtotal}}</td>
+                                        <td><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <div style="color: #333333;font-family: 'Avenir_Next_Demi_Bold', sans-serif;">Vendedor:</div>
+                        <div class="bold" style="color: #777777;"><span style="color: #afafaf;" class="demiBold">832001</span> Wendy Gamboa Loera</div>
+                    </div>
+                    <div class="col8">
+                        <div style="display: flex;justify-content: flex-end;color: #333333;font-size: 20px;align-items: center;" class="demiBold">$12,099</div>
+                    </div>
+                </div>
+                <div class="linkVerde textRight marginCero">
+                    <a class="textoVerde btnNuevaBusqueda">Guardar para más tarde</a>
+                </div>
+            </div>
+            <div class="blanco divPresupuesto">
+                <div class="tituloSeccion">Captura de pagos múltiples:</div>
+                <div class="divCol">
+                    <div class="col2">
+                        <div class="inputLabel">Total de la venta:</div>
+                        <input type="text" class="inputNumero" placeholder="$12,099">
+                    </div>
+                    <div class="col2 desac">
+                        <div class="inputLabel">A pagar:</div>
+                        <input type="text" class="inputNumero" placeholder="0">
+                    </div>
+                    <div class="col2 desac">
+                        <div class="inputLabel">Tipo de pago:</div>
+                        <mat-select class="select">
+                            <mat-option value="option1">Semanal</mat-option>
+                            <mat-option value="option2">Option 2</mat-option>
+                            <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                    </div>
+                    <div class="col2">
+                        <div class="inputLabel">Anticipo en efectivo:</div>
+                        <input type="text" class="inputNumero" placeholder="$12,099">
+                    </div>
+                    <div class="col2">
+                        <div class="inputLabel">Cambio:</div>
+                        <input type="text" class="inputNumero" placeholder="$12,099">
+                    </div>
+                    <div class="col2">
+                        <div style="height: 13px;"></div>
+                        <button mat-button class="btnPrimario" (click)="abrirModalHuella()">Surtir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

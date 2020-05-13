@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
     -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
     box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
     border: 1px solid #f9f9f9;
-    padding: 30px 35px;
+    padding: 25px 25px;
     box-sizing: border-box;
 }
 .divBuscador {
@@ -36,7 +36,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     color: #333333;
     font-family: 'AvenirNextLTPro-Medium', sans-serif;
-    font-size: 32px;
+    font-size:1.6em;
 }
 .bold {font-family: 'Avenir_Next_Bold', sans-serif;}
 .divBuscador .copy {
@@ -305,10 +305,7 @@ input {
     text-align:left;
     font-family: "AvenirNextLTPro-Medium", sans-serif;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+
 
 table.tbCancelacion th {
     white-space: nowrap;
@@ -327,6 +324,65 @@ table.tbCancelacion th {
     -moz-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
+
+.tblGeneral tr:nth-child(odd) td {
+    background-color: #f8f9f8;
+}
+
+.tblGeneral tr td {
+    padding: 7px 10px 7px 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.tablaDatosCliente tr td:nth-child(1) {
+    text-align: left;
+}
+.tablaDatosCliente tr td:nth-child(2) {
+    text-align: right;
+}
+.datosCliente{
+    margin-top: 15px;
+}
+.direccionCliente{
+    margin: 15px 0 5px;
+    padding-left: 10px;
+}
+
+table.tblGeneral.tablaProductos thead tr th{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-collapse: separate!important;
+    z-index:10;
+    
+}
+
+
+.mat-select-panel .mat-option, .mat-select-value {
+    font-size:0.8em;
+    font-family: Avenir_Next_Demi_Bold!important;
+}
+
+.mat-select-value-text {
+
+    font-size: 0.8em!important;
+}
+
+.txtColorGris{
+    color: #777;
+}
+
+.demiBold{
+    font-family:Avenir_Next_Demi_Bold;
+}
+
+.direccionInfo{
+    margin: 0 0 5px;
+    padding-left: 10px;
+}
+
+
 .clear{clear: both;}
 
 .tblResultados span {
@@ -357,7 +413,7 @@ table.tbCancelacion th {
       border:1px solid #40af29;
       border-radius:4px;
       outline:none;
-      margin-left:20px;
+      margin-left:10px;
       cursor:pointer;
   }
 
@@ -387,7 +443,7 @@ table.tbCancelacion th {
     font-weight:100;
   }
 .cont_buscador{
-    width:100%;
+    width:63%;
     margin-top:10px;
     margin-bottom:20px;
 }
@@ -446,6 +502,7 @@ table.tbCancelacion th {
     outline: none;
     border: 1px solid #A9A9A2;
     padding: 10px 10px 10px 10px;
+    font-family: Avenir_Next_Demi_Bold;
 }
 
 .tn_seccion{
@@ -514,9 +571,22 @@ table.tbCancelacion th {
     position: relative;
 }
 
-table.tblGeneral.tablaProductos tr td{
-    font-size: 10px;
+table.tblGeneral.tbArticulos tr td:nth-child(1){width: 124px;}
+table.tblGeneral.tbArticulos tr td:nth-child(2){width: 180px;}
+table.tblGeneral.tbArticulos tr td:nth-child(3){width: 124px;}
+
+table.tblGeneral.tbArticulos  tr td {
+    font-size:9px;
 }
+
+
+.verificacionCliente{
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px -1px #a8a6a8;
+    margin-top: 30px;
+}
+
+
 
 .mat-select-value {
     display: table-cell;

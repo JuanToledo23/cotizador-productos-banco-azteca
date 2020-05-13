@@ -21,9 +21,9 @@ input::-webkit-inner-spin-button {
 .content > div:nth-child(1) { display: flex; align-items: inherit; justify-content: flex-end; width: 575px; flex-wrap: wrap;}
 .blanco{
     background-color: #ffffff;
-    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
-    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -webkit-box-shadow: 0px 1px 3px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 1px 3px -1px rgba(168,166,168,1);
+    box-shadow: 0px 1px 3px -1px rgba(168,166,168,1);
     border: 1px solid #f9f9f9;
     padding: 25px 25px;
     box-sizing: border-box;
@@ -86,11 +86,9 @@ input {
     -webkit-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
     -moz-box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
     box-shadow: 0px 2px 4px 1px rgba(189,187,189,1);
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 250px;
+    min-width: 200px;
     line-height: 12px;
+    margin: 0 auto;
 }
 #inputBuscador  input:focus {
     -webkit-box-shadow: 0px 2px 2px -1px rgba(189,187,189,1);
@@ -210,11 +208,9 @@ input {
 
 /*Bloque Información Cliente*/
 .informacionCliente {
-    background-color: #ffffff;
-    -moz-box-shadow: 0px 2px 4px -1px #a8a6a8;
-    -webkit-box-shadow: 0px 2px 4px -1px #a8a6a8;
-    box-shadow: 0px 2px 4px -1px #a8a6a8;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .detalleUsuario .col5 {
     padding: 15px 30px;
@@ -502,13 +498,14 @@ table.tblGeneral.tablaProductos thead tr th{
     outline: none;
     border: 1px solid #A9A9A2;
     padding: 10px 10px 10px 10px;
-    font-family: Avenir_Next_Demi_Bold;
+    font-size: 12px;
+    font-family: 'Avenir_Next_Demi_Bold';
 }
 
 .tn_seccion{
     color: #363636;
     font-size: 0.7em;
-    font-family: "Avenir_Next_Demi_Bold";
+    font-family: "Avenir_Next_Bold", sans-serif;
     margin-bottom: 10px;
     margin-top: 20px;
 }
@@ -518,8 +515,9 @@ table.tblGeneral.tablaProductos thead tr th{
 }
 
 .btnSecundario{
-    background-color: #b0b1ab;
+    background-color: #696666;
     color: #ffffff;
+    box-shadow: none;
 }
 
 .mat-option:hover:not(.mat-option-disabled),
@@ -581,8 +579,6 @@ table.tblGeneral.tbArticulos  tr td {
 
 
 .verificacionCliente{
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px -1px #a8a6a8;
     margin-top: 30px;
 }
 
@@ -597,3 +593,5 @@ table.tblGeneral.tbArticulos  tr td {
     white-space: nowrap;
     font-size: 0.7em;
 }
+
+.cotizador {margin-bottom: 30px;}

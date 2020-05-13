@@ -68,8 +68,7 @@ export class CancelacionDespuesEntregaComponent implements OnInit {
   ];
 
   articulos = [
-    {articulo: 2, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"},
-    {descripcion: 'Mueble Qually para televisión, número de serie MCL21N11'},
+    {articulo: 2, descripcion: 'amsungTV 21" MCL21N11', fhora:"01/02/2020 13:00:00"}
     
   ];
 

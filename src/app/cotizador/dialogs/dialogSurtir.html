@@ -1,24 +1,33 @@
-<mat-dialog-content class="dialogHuella">
-    <div class="cuadroch blanco2 ">
-        <div class="contModal flex" style="font-size:.7em;">
-            <div class="w50 p20 bgVerde flexCol justifyC" (click)="clickEvent()" [ngClass]="intento2 ? 'success' : 'bgRojo'">
-
-                <div class="flex justifyC p20 simplemodal-close" style="height:80%">
-                    <img src="assets/img/fingerprint.png" class="w100 p20">
-                </div>
-
-                <div class="textoBlanco tCenter" style="height:20%">
-                    <div class="bold" [ngClass]="intento2 ? 'success' : 'textoIntentoEscanea'">Escanea la huella del Cliente</div>
-                    <div class="textoHuellaIntentos" [ngClass]="intento2 ? 'success' : 'textoHuellaIntento2'">Mantenga el dedo en el sensor un poco más</div>
-                    Intento {{numeroIntentos}}/3
-                </div>
-            </div>
-            <div class="w50">
-                <div class="tRight w100 p10">
+<mat-dialog-content class="dialogSurtir">
+    <div class="cuadroG blanco2 ">
+        <div class="contModal" style="font-size:.7em;">
+            <div class="w100"> 
+                <div class="tRight w100">
                     <a class="btnCerrarModal tVerde" mat-dialog-close><b>Cerrar</b></a>
                 </div>
-                <div class="p10">
-                    <img src="assets/img/beto.png" class="w100">
+                <h2 class="tCenter">¿Deseas surtir el pedido?</h2>
+                <div class="tCenter">Con este pedido, el cliente <span class="strong">ocupa $300</span> de su capacidad de pago, le quedarían <span class="strong">$20 disponibles</span> para seguir haciendo compras a crédito.</div><br>
+                <div class="scroll">
+                    <table class="tblGeneral tablaProductos">
+                        <thead> 
+                            <tr>
+                                <th>SKU</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr *ngFor="let producto of cotizadorService.elementosAgregados">
+                                <td>{{producto.sku}}</td>
+                                <td>{{producto.descripcion}}</td>
+                                <td>{{producto.precio}}</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div><br>
+                <div  class="btnRight m15">
+                    <button mat-button class="btn btnPrimario" (click)="abrirModalPresupuesto()" mat-dialog-close>Surtir</button>
+                    <button mat-button class="btn btnLink" >Guardar</button>
                 </div>
             </div>
         </div>

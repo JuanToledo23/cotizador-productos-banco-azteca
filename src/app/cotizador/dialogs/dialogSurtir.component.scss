@@ -1,0 +1,59 @@
+.dialogSurtir {
+    font-size: 18px;
+    font-family: 'Avenir_Next_Regular';
+}
+h2 {
+    margin: 0px!important;
+    padding-bottom: 10px;
+}
+.contModal { padding: 15px 25px!important; }
+.strong { font-family: 'Avenir_Next_Demi_Bold'; }
+.scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 200px;
+    height: auto;
+}
+// .tablaProductos { margin: 15px 0px; }
+.tablaProductos thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-collapse: separate!important;
+}
+.btnRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnRight .btn{ margin-right: 10px; }
+.btnRight .btn:last-of-type{ margin-right: 0px!important; } 
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Avenir_Next_Bold", sans-serif;
+    font-size: 11px;
+    padding: 11px 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 12px;
+}
+.btnPrimario {
+    background-color: #40af29;
+    color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 2px 4px 1px #bdbbbd;
+}
+.btnLink { color: #40af29 !important; }
+.btnIcono{
+    text-align: center;
+    padding: 0px!important;
+}
+.btnIcono img { width: 25px; }
+.m15 { margin: 15px 0px; }
+.txtVerde {
+    color: #40af29 !important;
+    font-family: 'Avenir_Next_Demi_Bold';
+}
+h1{margin: 0px;}

@@ -2,17 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { Options, LabelType } from 'ng5-slider';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogSurtir } from './dialogs/dialogosSurtir';
+import { CotizadorService } from '../services/cotizadorService';
 
 @Component({
   selector: 'app-cotizador',
   templateUrl: './cotizador.component.html',
   styleUrls: ['./cotizador.component.scss']
 })
+
 export class CotizadorComponent implements OnInit {
   selected = 'option1';
   ocultar = false;
   ocultar2 = false;
-  elementosAgregados = [];
+  
 
   productos = [
     {sku: 83990286, descripcion: "MUEBLE QUALLY GRUPO  \"D\"", precio: "$9120"},
@@ -63,7 +65,7 @@ export class CotizadorComponent implements OnInit {
     }
   };
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public cotizadorService: CotizadorService) { }
   ngOnInit() {}
 
   kFormatter(num) {
@@ -71,12 +73,12 @@ export class CotizadorComponent implements OnInit {
   }
 
   agregarProducto(producto:any){
-    this.elementosAgregados.push(producto);
+    this.cotizadorService.elementosAgregados.push(producto);
     this.ocultar2 = true;
   }
 
   eliminarFila(e) {
-    this.elementosAgregados.splice(this.elementosAgregados.indexOf(e), 1);
+    this.cotizadorService.elementosAgregados.splice(this.cotizadorService.elementosAgregados.indexOf(e), 1);
   }
 
   buscar(e){

@@ -20,6 +20,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogHuella } from './tickets-abarrotes/dialogs/dialogHuella';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { DialogSurtir } from './cotizador/dialogs/dialogosSurtir';
+import { DialogPresupuesto } from './cotizador/dialogs/dialogPresupuesto';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DialogSurtir } from './cotizador/dialogs/dialogosSurtir';
     CancelacionDespuesEntregaComponent,
     SurtimientoComponent,
     DialogHuella,
-    DialogSurtir
+    DialogSurtir,
+    DialogPresupuesto
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { DialogSurtir } from './cotizador/dialogs/dialogosSurtir';
   ],
   entryComponents: [
     DialogHuella,
-    DialogSurtir
+    DialogSurtir,
+    DialogPresupuesto
   ],
   providers: [],
   bootstrap: [AppComponent]

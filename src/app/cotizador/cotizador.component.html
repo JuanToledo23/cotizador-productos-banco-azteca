@@ -83,16 +83,16 @@
                         <th>Precio</th>
                         <th></th> 
                     </tr>
-                </thead>
+                </thead> 
                  <tbody>
-                    <tr *ngFor="let producto of elementosAgregados">
+                    <tr *ngFor="let producto of cotizadorService.elementosAgregados">
                         <td>{{producto.sku}}</td>
                         <td>{{producto.descripcion}}</td>
                         <td>{{producto.precio}}</td>
                         <td><img src="assets/img/icons/delete.svg" alt="Eliminar" (click)="eliminarFila(producto)"></td>
                     </tr>
                 </tbody>
-            </table>
+            </table> 
         </div>
         <div *ngIf="ocultar2" class="contenedorServicios">
             <div>

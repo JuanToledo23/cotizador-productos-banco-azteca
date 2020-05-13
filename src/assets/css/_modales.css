@@ -14,6 +14,14 @@
     -moz-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
+.cuadroM {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
 
 .blanco2 {
     background-color: #ffffff;
@@ -21,7 +29,7 @@
     border-radius: 3px;
     overflow: hidden;
 }
-.btnCerrarModal {font-size: 1em;cursor: pointer;}
+.btnCerrarModal {font-size: 1em;cursor: pointer;font-family: "Avenir_Next_Bold", sans-serif !important;}
 .bgVerde {
     background-color: #39b01d;
 }
@@ -65,3 +73,80 @@
 .textoIntentoEscanea {display: none;}
 .textoHuellaIntentos {display: none;}
 .textoHuellaIntento2 {display: block;}
+
+.inputNumero {text-align: right;}
+input {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 12px;
+    outline: none;
+    font-family: "Avenir_Next_Demi_Bold", sans-serif;
+}
+.inputLabel {
+    color: #333333;
+    font-size: .8em;
+    padding-bottom: 0px;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+}
+
+.divDatosGenerales {
+    width: 100%;
+    padding: 2px 25px 15px 25px;
+    box-sizing: border-box;
+}
+
+.divPresupuesto .col2,
+.divPresupuesto .col3,
+.divPresupuesto .col4,
+.divPresupuesto .col5,
+.divPresupuesto .col6,
+.divPresupuesto .col7,
+.divPresupuesto .col8,
+.divPresupuesto .col9 {
+    margin-bottom: 14px;
+}
+
+.btnPrimario {
+    display: block !important;
+    text-align: center !important;
+    background-color: #40af29 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: "Avenir_Next_Bold", sans-serif !important;
+    font-size: 11px !important;
+    padding: 9px 3px !important;
+    box-sizing: border-box !important;
+    border-radius: 3px !important;
+    box-shadow: 0px 2px 4px 1px #bdbbbd !important;
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    line-height: 12px !important;
+}
+.linkDigitalizar {
+    font-family: "Avenir_Next_Demi_Bold", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+}
+.iconoImprimir {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/img/icons/ImprimirVerde.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    margin-left: 10px;
+}
+.divAcciones{
+    margin: 10px 0;
+}
+.divAcciones > div:first-of-type {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

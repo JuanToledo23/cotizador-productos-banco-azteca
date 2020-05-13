@@ -1,0 +1,123 @@
+.contSecc {
+    width: 94%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.blanco {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    -moz-box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    box-shadow: 0px 3px 4px -1px rgba(168,166,168,1);
+    border: 1px solid #f9f9f9;
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+.bold { font-family: "Avenir_Next_Bold", sans-serif;}
+.demiBold {font-family: 'Avenir_Next_Demi_Bold',sans-serif;}
+input {
+    border: 1px solid #A9A9A2;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 12px;
+    outline: none;
+    font-family: "Avenir_Next_Demi_Bold", sans-serif;
+}
+.inputLabel {
+    color: #333333;
+    font-size: .8em;
+    padding-bottom: 0px;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+}
+.btnPrimario {
+    display: block;
+    text-align: center;
+    background-color: #40af29;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Avenir_Next_Bold", sans-serif;
+    font-size: 11px;
+    padding: 9px 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 1px #bdbbbd;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 12px;
+}
+.tituloSeccion {
+    color: #333333;
+    font-size: 1em;
+    padding-bottom: 0px;
+    font-family: 'Avenir_Next_Demi_Bold', sans-serif;
+}
+.divPresupuesto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.divPresupuesto .col2,
+.divPresupuesto .col3,
+.divPresupuesto .col4,
+.divPresupuesto .col5,
+.divPresupuesto .col6,
+.divPresupuesto .col7,
+.divPresupuesto .col8,
+.divPresupuesto .col9 {
+    margin-bottom: 14px;
+}
+
+.flex {
+    display: flex;
+}
+.alignICenter {align-items: center;}
+.marginLeft10 {
+    margin-left: 10px;
+}
+.flex{ display: flex;}
+.spaceBet {justify-content: space-between !important;}
+.w50{width: 50%; box-sizing: border-box;}
+.p5{padding:5px; box-sizing: border-box;}
+
+.linkVerde {
+    text-align: center;
+    font-family: "Avenir_Next_Demi_Bold", sans-serif;
+    font-size: 11px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.linkVerde a {text-decoration: none;}
+.textoVerde {
+    color: #40af29 !important;
+}
+.textRight {text-align: right !important;}
+.marginCero {margin-top: 0 !important;margin-bottom: 0 !important;}
+
+.pRelative {position: relative;}
+.iconoBuscar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #40af29;
+    width: 29px;
+    height: 29px;
+    background-image: url(../../assets/img/icons/searchBlanco.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.desac {
+    color: #ccc;
+    cursor: none;
+    pointer-events: none;
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+}
+.inputNumero {text-align: right;}
+.paddingRight31 {padding-right: 31px;}

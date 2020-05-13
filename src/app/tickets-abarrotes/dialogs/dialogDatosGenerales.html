@@ -1,0 +1,51 @@
+<mat-dialog-content class="dialogHuella">
+    <div class="cuadroM divDatosGenerales">
+        <div class="tRight w100 p10">
+            <a class="btnCerrarModal tVerde" mat-dialog-close><b>Cerrar</b></a>
+        </div>
+        <div><h2 style="color: #333333;text-align: center;margin: 0 0 20px 0 !important;">Datos generales de la moto</h2></div>
+        <div class="divCol divPresupuesto">
+            <div class="col3">
+                <div class="inputLabel">Marca:</div>
+                <input type="text" class="inputNumero" placeholder="Italika">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Modelo:</div>
+                <input type="text" class="inputNumero" placeholder="DM250 AZUL">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Año:</div>
+                <input type="text" class="inputNumero" placeholder="2020">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Núm. de serie:</div>
+                <input type="text" class="inputNumero" placeholder="A-02938740">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Núm. de motor:</div>
+                <input type="text" class="inputNumero" placeholder="34250000234">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Color:</div>
+                <mat-select class="select">
+                    <mat-option value="option1">Azul</mat-option>
+                    <mat-option value="option2">Option 2</mat-option>
+                    <mat-option value="option3">Option 3</mat-option>
+                    <mat-option value="option4">Option 4</mat-option>
+                </mat-select>
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Núm. de factura:</div>
+                <input type="text" class="inputNumero" placeholder="00328">
+            </div>
+            <div class="col3">
+                <div class="inputLabel">Núm. Emp. Encargado:</div>
+                <input type="text" class="inputNumero" placeholder="832001">
+            </div>
+        </div>
+        <div class="divAcciones divCol">
+            <div class="col9"><a class="tVerde linkDigitalizar">Digitalizar <div class="iconoImprimir"></div></a></div>
+            <div class="col3"><button mat-button class="btnPrimario" mat-dialog-close>Guardar</button></div>
+        </div>
+    </div>
+</mat-dialog-content>

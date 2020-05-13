@@ -109,50 +109,48 @@
 
 
         <div class="informacionCliente" *ngIf="detallesClienteCancelacion">
-            <div class="dw40 ml20">
-
-                    <div class="cotizador">
-                        <div class="blanco cardUsuario">
-                            <div class="nombreUsuario">
-                                <div>
-                                    <div class="userPic"></div>
-                                </div>
-                                <div>
-                                    <h2 class="demiBold">Juan Alberto</h2>
-                                    <h3>Toledo Tello</h3>
-                                </div>
-                            </div> 
-                            <div class="datosCliente">
-                                <table class="tblGeneral tablaDatosCliente">
-                                     <tbody>
-                                        <tr>
-                                            <td>Cliente único</td>
-                                            <td class="demiBold txtColorGris">1001-1322-0012</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Capacidad de pago</td>
-                                            <td class="demiBold txtColorGris">$350</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Capacidad de pago disponible</td>
-                                            <td class="demiBold">$320</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="direccionCliente">Dirección</div>
-                            <div class="demiBold direccionInfo">
-                                Cuauhtémoc 10-3, Col. Barrio La Lonja. CP 14268
-                                Delegación Tlalpan, CDMX
-                            </div>
-                            <div class="linkVerde">
-                                <a href="" class="textoVerde btnNuevaBusqueda">Buscar otro cliente</a>
-                            </div>
+            <div class="cotizador" style="width: 38%;">
+                <div class="blanco cardUsuario">
+                    <div class="nombreUsuario">
+                        <div>
+                            <div class="userPic"></div>
                         </div>
+                        <div>
+                            <h2 class="demiBold">Juan Alberto</h2>
+                            <h3>Toledo Tello</h3>
+                        </div>
+                    </div> 
+                    <div class="datosCliente">
+                        <table class="tblGeneral tablaDatosCliente">
+                                <tbody>
+                                <tr>
+                                    <td>Cliente único</td>
+                                    <td class="demiBold txtColorGris">1001-1322-0012</td>
+                                </tr>
+                                <tr>
+                                    <td>Capacidad de pago</td>
+                                    <td class="demiBold txtColorGris">$350</td>
+                                </tr>
+                                <tr>
+                                    <td>Capacidad de pago disponible</td>
+                                    <td class="demiBold">$320</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                    <div class="direccionCliente">Dirección</div>
+                    <div class="demiBold direccionInfo">
+                        Cuauhtémoc 10-3, Col. Barrio La Lonja. CP 14268
+                        Delegación Tlalpan, CDMX
+                    </div>
+                    <div class="linkVerde">
+                        <a href="" class="textoVerde btnNuevaBusqueda">Buscar otro cliente</a>
+                    </div>
+                </div>
             </div>
+     
 
-            <div class="dw60">
+            <div class="cotizador" style="width: 58%;">
                 <div class="blanco cardUsuario">
                     <div class="col7">
 
@@ -213,8 +211,8 @@
         </div>
 
 
-        <div class="verificacionCliente" *ngIf="verificacionCliente">
-            <div class="dw40 ml20">
+        <div class="verificacionCliente" *ngIf="verificacionCliente" style="display: flex;">
+            <div class="ml20" style="width: 40%;">
                  <div class="cotizador">
                         <div class="blanco cardUsuario">
                             <div class="nombreUsuario">
@@ -256,7 +254,7 @@
                     </div>
             </div>
 
-            <div class="dw60">
+            <div class="cotizador" style="width: 58%;">
                 <div class="blanco cardUsuario">
                     <div class="col7">
 
@@ -313,10 +311,6 @@
                                 <mat-option value="option6">300 - Falta de servicio del proveedor</mat-option>
                             </mat-select>
 
-                            <div class="btnVerde">
-                                <button mat-button class=" btnPrimario btnSecundario  b_bottom btnContinuar">Regresar</button>
-                            </div>
-
                         </div>
 
 
@@ -328,37 +322,16 @@
                                 observaciones
                             </div>
                             <textarea class="observaciones" placeholder="Escríbe tus observaciones"></textarea>
-
-                            <div class="btnVerde">
-                                <button mat-button class="btnPrimario  b_bottom lf0 btnContinuar">Finalizar</button>
-                            </div>
                         </div>
-
-
-
-                        
-                      
+                    </div>
+                    <div class="btnVerde" style="display: flex;justify-content: space-between;margin: 0 !important">
+                        <button mat-button class=" btnPrimario btnSecundario btnContinuar">Regresar</button>
+                        <button mat-button class="btnPrimario lf0 btnContinuar">Finalizar</button>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-
-<<<<<<< HEAD
- 
-
-
-
-
-=======
->>>>>>> 1111428b85fa316fe19c51e08793dd928efd39d8
-
-
-
-
-
-
-
 
     </div>
 </div>

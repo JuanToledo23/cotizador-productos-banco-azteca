@@ -3,17 +3,21 @@
         <div class="">
             <div class="blanco divPresupuesto">
                 <div class="divCol">
-                    <div class="col4 flex alignICenter pRelative">
+                    <div class="col4 flex alignICenter">
                         <div class="tituloSeccion">Presupuesto:</div>
-                        <input type="text" class="inputBuscar marginLeft10 paddingRight31">
-                        <div class="iconoBuscar"></div>
+                        <div class="pRelative marginLeft10">
+                            <input type="text" class="inputBuscar paddingRight31">
+                            <div class="iconoBuscar"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="divCol desac">
                     <div class="col4 pRelative">
                         <div class="inputLabel">Número de Cliente:</div>
-                        <input type="text" class="inputNumero paddingRight31" placeholder="8328-0293-0932">
-                        <div class="iconoBuscar"></div>
+                        <div class="pRelative">
+                            <input type="text" class="inputNumero paddingRight31" placeholder="8328-0293-0932">
+                            <div class="iconoBuscar"></div>
+                        </div>
                     </div>
                     <div class="col4">
                         <div class="inputLabel">Nombre(s):</div>
@@ -68,7 +72,7 @@
             <div class="blanco divPresupuesto">
                 <div class="tituloSeccion p5">Periodos de pago:</div>
                 <div class="divCol">
-                    <div class="col3">
+                    <div class="col4">
                         <div class="flex spaceBet">
                             <div class="w50 p5">
                               <mat-select class="select">
@@ -92,8 +96,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col9">
-                        <div class="scroll">
+                    <div class="col8">
+                        <div class="scroll" style="margin-top: -22px;">
                             <table class="tblGeneral tablaProductos">
                                 <thead>  
                                     <tr>

@@ -43,9 +43,15 @@
                 <input type="text" class="inputNumero" placeholder="832001">
             </div>
         </div>
-        <div class="divAcciones divCol">
+        <br>
+        <!-- <div class="divAcciones divCol">
             <div class="col9"><a class="tVerde linkDigitalizar">Digitalizar <div class="iconoImprimir"></div></a></div>
-            <div class="col3"><button mat-button class="btnPrimario" mat-dialog-close>Guardar</button></div>
+            <div class="col3"><button mat-button class="btnPrimarioModal" mat-dialog-close>Guardar</button></div>
+        </div> -->
+        <div class="btnRight">
+            <button mat-button class="btn btnLink">Guardar</button>
+            <button mat-button class="btn btnIcono"><img src="assets/img/icons/ImprimirVerde.svg" alt=""></button>
+            <button mat-button class="btn btnPrimario" (click)="abrirModalSurtir()">Generar cotización</button>
         </div>
     </div>
 </mat-dialog-content>

@@ -81,8 +81,8 @@ input {
   color: #ffffff;
   text-decoration: none;
   font-family: "Avenir_Next_Bold", sans-serif;
-  font-size: 11px;
-  padding: 10px;
+  font-size: 9px;
+  padding: 5px 10px;
   box-sizing: border-box;
   border-radius: 3px;
   // box-shadow: 0px 2px 4px 1px #bdbbbd;
@@ -101,7 +101,7 @@ input {
 
 .blanco {
   background-color: #ffffff;
-  box-shadow: 0 3px 4px -1px #a8a6a8;
+      box-shadow: 0px 1px 3px -1px #a8a6a8;
   border: 1px solid #f9f9f9;
   box-sizing: border-box;
 }
@@ -114,6 +114,9 @@ input {
 }
 
 //Etiquetado
+.contSecc {
+  max-width: 960px;
+}
 .tituloEtiquetado {
   padding: 0px;
   font-size: 1.7em;
@@ -135,12 +138,12 @@ input {
 }
 
 .etiquetadoRow {
-  min-height: 330px;
+  min-height: 280px;
 }
 
 .tblScrolV {
   overflow-y: scroll;
-  max-height: 200px;
+  max-height: 150px;
   min-height: 30px;
 }
 .tblScrolV th{
@@ -148,6 +151,11 @@ input {
   top:0;
   background-color: #fff;
   z-index: 1;
+  font-size: .7em;
+}
+.tblScrolV td{
+
+  font-size: .7em;
 }
 .tblScrollH{
   overflow-x: scroll;

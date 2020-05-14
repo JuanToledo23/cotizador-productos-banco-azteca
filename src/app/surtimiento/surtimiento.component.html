@@ -23,7 +23,7 @@
                         <div class="inputLabel">Nombre(s):</div>
                         <input type="text" class="inputBuscar" placeholder="Haim">
                     </div>
-                    <div class="col4 desac">
+                    <div class="col4">
                         <div class="inputLabel">Apellidos:</div>
                         <input type="text" class="inputBuscar" placeholder="Sagrero">
                     </div>
@@ -113,14 +113,14 @@
                                 </thead>
                                  <tbody>
                                     <tr *ngFor="let producto of productos">
-                                        <td>{{producto.sku}}</td>
-                                        <td>{{producto.descripcion}}</td>
-                                        <td>{{producto.precio}}</td>
-                                        <td>{{producto.cantidad}}</td>
-                                        <td>{{producto.descuentos}}</td>
-                                        <td>{{producto.especial}}</td>
-                                        <td>{{producto.subtotal}}</td>
-                                        <td><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(i)"></td>
+                                        <td class="w10">{{producto.sku}}</td>
+                                        <td class="w30">{{producto.descripcion}}</td>
+                                        <td class="w10">{{producto.precio}}</td>
+                                        <td class="w10">{{producto.cantidad}}</td>
+                                        <td class="w10">{{producto.descuentos}}</td>
+                                        <td class="w10">{{producto.especial}}</td>
+                                        <td class="w10">{{producto.subtotal}}</td>
+                                        <td class="w10"><img src="assets/img/icons/delete.svg" class="btnBorrar" (click)="delete(producto)"></td>
                                     </tr>
                                 </tbody>
                             </table>

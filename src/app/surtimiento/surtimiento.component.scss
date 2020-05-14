@@ -11,6 +11,7 @@
     border: 1px solid #f9f9f9;
     padding: 20px 35px;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 .bold { font-family: "Avenir_Next_Bold", sans-serif;}
 .demiBold {font-family: 'Avenir_Next_Demi_Bold',sans-serif;}
@@ -111,7 +112,7 @@ input {
     height: 23px;
     background-image: url(../../assets/img/icons/searchBlanco.svg);
     background-repeat: no-repeat;
-    background-size: 15px;
+    background-size: 12px;
     background-position: center center;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;

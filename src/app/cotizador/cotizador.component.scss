@@ -234,3 +234,10 @@ input[type=text]:focus {border: 1px solid #40af29;}
 .btnIcono img {
     width: 25px;
 }
+
+@media screen and (max-width: 768px) { 
+    .cotizador {flex-direction: column;}
+    .cotizador .cardUsuario { width: 100%; }
+    .cotizador .contBusquedaFiltro { width: 100%; }
+    .contBusquedaFiltro { margin-top: 15px; }
+}

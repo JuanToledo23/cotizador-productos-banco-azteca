@@ -11,13 +11,14 @@
     border: 1px solid #f9f9f9;
     padding: 20px 35px;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 .bold { font-family: "Avenir_Next_Bold", sans-serif;}
 .demiBold {font-family: 'Avenir_Next_Demi_Bold',sans-serif;}
 input {
     border: 1px solid #A9A9A2;
     width: 100%;
-    padding: 6px 12px;
+    padding: 3px 12px;
     box-sizing: border-box;
     border-radius: 3px;
     color: #333333;
@@ -54,11 +55,14 @@ input {
     padding-bottom: 0px;
     font-family: 'Avenir_Next_Demi_Bold', sans-serif;
 }
+.divPresupuesto:first-of-type {
+    margin-top: 30px;
+}
 .divPresupuesto {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .divPresupuesto .col2,
 .divPresupuesto .col3,
@@ -68,7 +72,7 @@ input {
 .divPresupuesto .col7,
 .divPresupuesto .col8,
 .divPresupuesto .col9 {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 .flex {
@@ -82,7 +86,8 @@ input {
 .spaceBet {justify-content: space-between !important;}
 .w50{width: 50%; box-sizing: border-box;}
 .p5{padding:5px; box-sizing: border-box;}
-
+.w10 {width: 10%;box-sizing: border-box;}
+.w30 {width: 30%;box-sizing: border-box;}
 .linkVerde {
     text-align: center;
     font-family: "Avenir_Next_Demi_Bold", sans-serif;
@@ -103,11 +108,11 @@ input {
     bottom: 1px;
     right: 0;
     background-color: #40af29;
-    width: 29px;
-    height: 29px;
+    width: 23px;
+    height: 23px;
     background-image: url(../../assets/img/icons/searchBlanco.svg);
     background-repeat: no-repeat;
-    background-size: 15px;
+    background-size: 12px;
     background-position: center center;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -121,3 +126,9 @@ input {
 }
 .inputNumero {text-align: right;}
 .paddingRight31 {padding-right: 31px;}
+.select {padding: 3px 12px !important;}
+
+.tablaProductos tr td {
+    font-size: 9px !important;
+    padding: 3px !important;
+}

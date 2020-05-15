@@ -241,3 +241,15 @@ input[type=text]:focus {border: 1px solid #40af29;}
     .cotizador .contBusquedaFiltro { width: 100%; }
     .contBusquedaFiltro { margin-top: 15px; }
 }
+@media screen and (max-width: 900px) {
+    .contenedorServicios {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contenedorServicios > div:nth-child(1), .contenedorServicios > div:nth-child(3) {
+      width: 28%;
+    }
+    .contenedorServicios > div:nth-child(2), .contenedorServicios > div:nth-child(4) {
+      width: 68%;
+    }
+  }

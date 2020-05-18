@@ -78,6 +78,7 @@ input[type=text]:focus {border: 1px solid #40af29;}
     margin: 0 auto;
 }
 .contCotizador > div { margin-bottom: 30px; }
+
 .cotizador {
     display: flex;
     justify-content: space-between;
@@ -233,6 +234,23 @@ input[type=text]:focus {border: 1px solid #40af29;}
 }
 .btnIcono img {
     width: 25px;
+}
+
+@media screen and (max-width: 500px) { 
+    .contenedorServicios > div:nth-child(1),
+    .contenedorServicios > div:nth-child(2),
+    .contenedorServicios > div:nth-child(3) {
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+    .contenedorServicios > div:nth-child(4) { width: 100%!important; }
+    .contEnganche > div:nth-child(2) div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contEnganche > div:nth-child(2) { flex-direction: column; }
+    .contSliderToggle { margin-top: 0px; }
+    .contCotizador > div:nth-child(3) { margin-bottom: 0px!important; }
 }
 
 @media screen and (max-width: 768px) { 

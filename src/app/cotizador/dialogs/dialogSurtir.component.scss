@@ -57,3 +57,6 @@ h2 {
     font-family: 'Avenir_Next_Demi_Bold';
 }
 h1{margin: 0px;}
+@media screen and (max-width: 768px) { 
+    .cuadroG { width: 100%!important; }
+}

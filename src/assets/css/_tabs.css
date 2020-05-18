@@ -40,3 +40,8 @@
 .mat-tab-label .mat-tab-label-content {
     color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+    .mat-tab-label{
+        min-width: 100px!important;
+    }
+}

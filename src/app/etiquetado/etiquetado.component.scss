@@ -161,3 +161,33 @@ input {
 .tblScrollH{
   overflow-x: scroll;
 }
+
+@media screen and (max-width: 768px) { 
+  .etiquetadoRow {
+    min-height: auto;
+    flex-direction: column!important;
+  }
+  .w60, .w50, .w40{width: 100%;}
+  .contSecc { 
+    box-shadow: 0px 1px 3px -1px #a8a6a8!important;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .blanco { box-shadow: none; }
+  .sepVer{
+    border-left: 0px;
+    border-top: 1px solid #b0b1ab;
+    margin: 20px 0px 0px;
+  }
+  .etiquetadoRow > div:nth-child(1) {
+    border-top: 1px solid #b0b1ab;
+  }
+  .flexCol { flex-direction: inherit; }
+  .mat-radio-group > .p5 {
+    margin: 0px 10px;
+  }
+  .blanco {
+    border: 0px;
+  }
+}

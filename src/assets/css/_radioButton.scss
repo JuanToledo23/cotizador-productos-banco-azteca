@@ -23,3 +23,10 @@
 .mat-radio-container {
   transform: scale(.8) !important;
 }
+
+@media screen and (max-width:700px) {
+  .mat-radio-label-content {
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+  }
+}

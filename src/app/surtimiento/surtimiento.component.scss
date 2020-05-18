@@ -132,3 +132,27 @@ input {
     font-size: 9px !important;
     padding: 3px !important;
 }
+
+.scrollx {
+    overflow-x: scroll;
+}
+
+@media screen and (max-width:767px){
+    .divPresupuesto {width: 100%;}
+    .divPresupuesto .col2,
+    .divPresupuesto .col3, 
+    .divPresupuesto .col4,
+    .divPresupuesto .col5,
+    .divPresupuesto .col6,
+    .divPresupuesto .col7,
+    .divPresupuesto .col8,
+    .divPresupuesto .col9 {
+        grid-column: auto / span 12;
+    }
+    .divPresupuesto .col8 {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:767px){
+    .w50 {width: 100%;}
+}

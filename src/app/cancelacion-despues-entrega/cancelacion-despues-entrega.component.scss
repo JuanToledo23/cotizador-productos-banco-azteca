@@ -212,6 +212,7 @@ input {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .detalleUsuario .col5 {
     padding: 15px 30px;
@@ -501,6 +502,7 @@ table.tblGeneral.tablaProductos thead tr th{
     padding: 10px 10px 10px 10px;
     font-size: 12px;
     font-family: 'Avenir_Next_Demi_Bold';
+    box-sizing: border-box;
 }
 
 .tn_seccion{
@@ -580,6 +582,8 @@ table.tblGeneral.tbArticulos  tr td {
 
 
 .verificacionCliente{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
@@ -596,3 +600,68 @@ table.tblGeneral.tbArticulos  tr td {
 }
 
 .cotizador {margin-bottom: 30px;}
+.divMotivoCancelacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+.divMotivoCancelacion > div {width: 48%;}
+.botonesCancelacion {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 !important;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:950px){
+    .botonesCancelacion .btnPrimario {margin: 10px auto;}
+}
+
+@media screen and (max-width:768px){
+    .admnCont {
+        width: 70%;
+    }
+    .divClientes {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .informacionCliente > div {
+        width: 98% !important;
+    }
+    .cont_buscador {
+        width: 100%;
+    }
+    .tb_buscador div.cll_buscador:nth-child(1) {
+        width: 100%;
+    }
+    .verificacionCliente > div,
+    .divMotivoCancelacion > div {width: 98% !important;}
+    .observaciones {width: 100%;}
+    
+    
+}
+
+@media screen and (max-width:600px){
+    .admnCont {
+        width: 100%;
+    }
+    .divCliente {
+        flex-wrap: wrap;
+    }
+    .fotoCliente {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .divInfoCliente,
+    .divCDP {
+        width: 100%;
+    }
+    .divInfoCliente {
+        border-bottom: none;
+        text-align: center;
+    }
+
+}

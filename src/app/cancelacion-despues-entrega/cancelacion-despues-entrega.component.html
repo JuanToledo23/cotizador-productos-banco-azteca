@@ -211,7 +211,7 @@
         </div>
 
 
-        <div class="verificacionCliente" *ngIf="verificacionCliente" style="display: flex;">
+        <div class="verificacionCliente" *ngIf="verificacionCliente">
             <div class="ml20" style="width: 40%;">
                  <div class="cotizador">
                         <div class="blanco cardUsuario">
@@ -263,8 +263,7 @@
                                 <div class="num_grande">2</div>
                             </div>
                             <div class="cll_header">
-                                Verifica el detalle del pedido, selecciona el motivo de <br>
-                               Cancelación y escribe las observaciones correspondientes
+                                Verifica el detalle del pedido, selecciona el motivo de Cancelación y escribe las observaciones correspondientes
                             </div>
                         </div>
 
@@ -292,39 +291,38 @@
                         </div>
                     
                         <div class="clear"></div>
+                        <div class="divMotivoCancelacion">
+                            <div class="divMotivo">
+                                <div class="tn_seccion">
+                                    Selecciona el motivo de cancelación
+                                </div>
+                                <div class="sbn_seccion">
+                                    Motivo de cancelación
+                                </div>
 
+                                <mat-select class="select" [(value)]="selected">
+                                    <mat-option value="option1">Selecciona un motivo de cancelación</mat-option>
+                                    <mat-option value="option2">030 - Mejor precio con la competencia</mat-option>
+                                    <mat-option value="option3">034 - No le gusta</mat-option>
+                                    <mat-option value="option4">043 - No funciona</mat-option>
+                                    <mat-option value="option5">230 - Cancelación de Tarjeta Azteca</mat-option>
+                                    <mat-option value="option6">300 - Falta de servicio del proveedor</mat-option>
+                                </mat-select>
 
-                        <div class="aw50 ml30">
-                            <div class="tn_seccion">
-                                Selecciona el motivo de cancelación
                             </div>
-                            <div class="sbn_seccion">
-                                Motivo de cancelación
+                            <div class="divObservaciones">
+                                <div class="tn_seccion">
+                                Escribe las observaciones correspondientes
+                                </div>
+                                <div class="sbn_seccion">
+                                    observaciones
+                                </div>
+                                <textarea class="observaciones" placeholder="Escríbe tus observaciones"></textarea>
                             </div>
-
-                            <mat-select class="select" [(value)]="selected">
-                                <mat-option value="option1">Selecciona un motivo de cancelación</mat-option>
-                                <mat-option value="option2">030 - Mejor precio con la competencia</mat-option>
-                                <mat-option value="option3">034 - No le gusta</mat-option>
-                                <mat-option value="option4">043 - No funciona</mat-option>
-                                <mat-option value="option5">230 - Cancelación de Tarjeta Azteca</mat-option>
-                                <mat-option value="option6">300 - Falta de servicio del proveedor</mat-option>
-                            </mat-select>
-
                         </div>
 
-
-                        <div class="aw50">
-                            <div class="tn_seccion">
-                               Escribe las observaciones correspondientes
-                            </div>
-                            <div class="sbn_seccion">
-                                observaciones
-                            </div>
-                            <textarea class="observaciones" placeholder="Escríbe tus observaciones"></textarea>
-                        </div>
                     </div>
-                    <div class="btnVerde" style="display: flex;justify-content: space-between;margin: 0 !important">
+                    <div class="btnVerde botonesCancelacion">
                         <button mat-button class=" btnPrimario btnSecundario btnContinuar">Regresar</button>
                         <button mat-button class="btnPrimario lf0 btnContinuar">Finalizar</button>
                     </div>

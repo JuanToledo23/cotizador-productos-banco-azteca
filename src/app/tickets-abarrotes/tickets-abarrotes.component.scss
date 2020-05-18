@@ -30,7 +30,6 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    min-width: 250px;
     line-height: 12px;
 }
 .blanco{
@@ -160,7 +159,7 @@ input:focus {border: 1px solid #40af29;}
 .divCliente {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 .divCliente .fotoCliente {
     width: 16%;
@@ -295,6 +294,11 @@ input:focus {border: 1px solid #40af29;}
 }
 
 
+@media screen and (max-width:950px){
+    .divSeleccionaPlazos {
+        width: 100%;
+    }
+}
 @media screen and (max-width:850px){
     .detalleUsuario .col5,
     .detalleUsuario .col7 {
@@ -303,5 +307,40 @@ input:focus {border: 1px solid #40af29;}
     .detalleUsuario .col7 {
         border-left: none;
         border-top: 1px solid #b1b2ab;
+    }
+}
+
+@media screen and (max-width:768px){
+    .admnCont {
+        width: 70%;
+    }
+    .divClientes {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:600px){
+    .admnCont {
+        width: 100%;
+    }
+    .divSeleccionaPlazos .mat-radio-group .mat-radio-label {
+        font-size: 12px;
+    }
+    .divCliente {
+        flex-wrap: wrap;
+    }
+    .fotoCliente {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .divInfoCliente,
+    .divCDP {
+        width: 100%;
+    }
+    .divInfoCliente {
+        border-bottom: none;
+        text-align: center;
     }
 }

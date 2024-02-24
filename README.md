@@ -1,4 +1,8 @@
-# MigracionCanalesTerceros
+# Cotizador de productos para Banco Azteca
+
+## Maquetado del cotizador de de productos de Banco Azteca responsivo e interactivo
+
+Utilizar version de [NodeJS 15.14.0](https://nodejs.org/dist/v15.14.0/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26.
 
